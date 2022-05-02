@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Комментарии: Jigoshop &#8212; плагин для вашего интернет-магазина</title>
+	<atom:link href="/jigoshop-plagin-dlya-vashego-internet-magazina/feed/" rel="self" type="application/rss+xml" />
+	<link>/jigoshop-plagin-dlya-vashego-internet-magazina/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Dec 2020 17:15:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+</channel>
+</rss>

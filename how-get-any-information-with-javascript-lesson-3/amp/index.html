@@ -1,0 +1,646 @@
+<!doctype html>
+<html amp lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Каждый бот должен уметь парсить любую информацию с сайта, например ссылки, заголовки, любой текст, номера телефонов, адреса электронной почты, картинки." />
+<meta name="twitter:title" content="[Урок 3] . Получение любой информации со страницы при помощи Javascript | Artstroy - Искусное веб строительство!" />
+<meta name="twitter:image" content="https://artstroy.net/wp-content/uploads/52714.png" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[Урок 3] . Получение любой информации со страницы при помощи Javascript | Artstroy - Искусное веб строительство!" />
+<meta property="og:description" content="Каждый бот должен уметь парсить любую информацию с сайта, например ссылки, заголовки, любой текст, номера телефонов, адреса электронной почты, картинки." />
+<meta property="og:url" content="https://artstroy.net/how-get-any-information-with-javascript-lesson-3/" />
+<meta property="og:site_name" content="Artstroy - Искусное веб строительство!" />
+<meta property="article:tag" content="iMacros" />
+<meta property="article:tag" content="Javascript" />
+<meta property="article:tag" content="js" />
+<meta property="article:tag" content="парсинг" />
+<meta property="article:section" content="Уроки: JS &amp; Imacros" />
+<meta property="article:published_time" content="2017-10-28T08:06:31+00:00" />
+<meta property="article:modified_time" content="2017-10-29T19:07:08+00:00" />
+<meta property="og:updated_time" content="2017-10-29T19:07:08+00:00" />
+<meta property="og:image" content="https://artstroy.net/wp-content/uploads/52714.png" />
+<meta property="og:image:secure_url" content="https://artstroy.net/wp-content/uploads/52714.png" />
+<meta property="og:image:width" content="700" />
+<meta property="og:image:height" content="330" />
+	<title>[Урок 3] . Получение любой информации со страницы при помощи Javascript | Artstroy - Искусное веб строительство!</title>
+		<link rel="canonical" href="/how-get-any-information-with-javascript-lesson-3/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"Artstroy - \u0418\u0441\u043a\u0443\u0441\u043d\u043e\u0435 \u0432\u0435\u0431 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e!"},"@type":"Article","mainEntityOfPage":"https:\/\/artstroy.net\/how-get-any-information-with-javascript-lesson-3\/","headline":"[\u0423\u0440\u043e\u043a 3] . \u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435 \u043b\u044e\u0431\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438 \u0441\u043e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 Javascript","datePublished":"2017-10-28T08:06:31+00:00","dateModified":"2017-10-29T19:07:08+00:00","author":{"@type":"Person","name":"ArtStroy"},"image":{"@type":"ImageObject","url":"https:\/\/artstroy.net\/wp-content\/uploads\/52714.png","width":700,"height":330},"description":"\u041a\u0430\u0436\u0434\u044b\u0439 \u0431\u043e\u0442 \u0434\u043e\u043b\u0436\u0435\u043d \u0443\u043c\u0435\u0442\u044c \u043f\u0430\u0440\u0441\u0438\u0442\u044c \u043b\u044e\u0431\u0443\u044e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e \u0441 \u0441\u0430\u0439\u0442\u0430, \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 \u0441\u0441\u044b\u043b\u043a\u0438, \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0438, \u043b\u044e\u0431\u043e\u0439 \u0442\u0435\u043a\u0441\u0442, \u043d\u043e\u043c\u0435\u0440\u0430 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u043e\u0432, \u0430\u0434\u0440\u0435\u0441\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u043f\u043e\u0447\u0442\u044b, \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0438."}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 600px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c664f84{max-width:700px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-828e6e0{max-width:640px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-52fc747{max-width:599px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{margin-top:12px;margin-bottom:12px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fbb711c{font-size:12px;height:18px;line-height:18px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6986ee0{min-height:16.8px;line-height:16.8px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c86a462{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-48732d5{max-width:354px}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				Artstroy &#8212; Искусное веб строительство!			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">[Урок 3] . Получение любой информации со страницы при помощи Javascript</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/ad9373be8f728ddda30d1b039f115ccf?s=24&#038;d=mm&#038;r=g" alt="ArtStroy" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">ArtStroy</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-10-28T10:06:31+00:00">
+		5 лет ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p><figure class="aligncenter amp-wp-c664f84"><amp-img class="size-full wp-image-3958  amp-wp-enforced-sizes" src="/wp-content/uploads/52714.png" width="700" height="330" srcset="/wp-content/uploads/52714.png 700w, /wp-content/uploads/52714-640x302.png 640w, /wp-content/uploads/52714-520x245.png 520w, /wp-content/uploads/52714-720x340.png 720w" sizes="(max-width: 700px) 100vw, 700px" layout="intrinsic"></amp-img></figure></p>
+<p>Каждый уважающий себя бот должен уметь извлекать любую информацию с сайта, например ссылки, заголовки, любой текст, номера телефонов, адреса электронной почты, картинки. В этом уроке мы рассмотрим несколько методов сбора данных на странице при помощи iMacros и Javascript.</p>
+<h2>Исходный код страницы</h2>
+<p>Для начала, я хочу очень кратко рассказать про то, из чего состоит веб-страница. Вы можете открыть любой сайт, например мой блог и нажать<code> Ctrl+U</code>(или правой кнопкой на странице и выбрать «Исходный код»). Вы увидите код, это обычный текст в формате HTML, который браузер преобразует в веб-страницу. Ключевые слова, заключенные в «&lt;&gt;» — называются тегами, свойства внутри них — атрибутами и значениями атрибута. Все это нам пригодится, чтобы отыскивать необходимые теги с нужной информацией.</p>
+<p><strong>Пример:</strong></p>
+<p><figure class="aligncenter amp-wp-828e6e0"><amp-img class="size-medium wp-image-3961 amp-wp-enforced-sizes" src="/wp-content/uploads/schema-640x203.png" alt="" width="640" height="203" srcset="/wp-content/uploads/schema-640x203.png 640w, /wp-content/uploads/schema-768x244.png 768w, /wp-content/uploads/schema.png 876w" sizes="(max-width: 640px) 100vw, 640px" layout="intrinsic"></amp-img></figure></p>
+<p> </p>
+<p>Что же делает браузер с этим кодом? Браузер, руководствуясь этим кодом, располагает информацию на странице в указанном порядке, подгружает таблицы стилей css, которые добавляют оформление элементам, подгружает и вставляет картинки, скачивает и выполняет различные скрипты. Правила, по которым браузер это делает — называются спецификацией, которая необходима, чтобы все браузеры отрисовывали страницы и обрабатывали скрипты одинаково.</p>
+<h2>DOM (Document Object Model) – объектная модель страницы</h2>
+<p>Основным инструментом работы и динамических изменений на странице является DOM (Document Object Model) – объектная модель, используемая для XML/HTML-документов. Согласно DOM-модели, документ является иерархией, деревом. Каждый HTML-тег образует узел дерева с типом «элемент». Вложенные в него теги становятся дочерними узлами. Для представления текста создаются узлы с типом «текст».</p>
+<p>DOM – это представление страницы в виде дерева объектов, доступное для чтения и изменения через JavaScript.</p>
+<p>При чтении неверного HTML браузер автоматически корректирует его для показа и при построении DOM. В частности, всегда будет верхний тег<span class="Apple-converted-space"> </span><code>&lt;html&gt;</code>. Даже если в тексте нет – в DOM он будет, браузер создаст его самостоятельно. То же самое касается и тега<span class="Apple-converted-space"> </span><code>&lt;body&gt;</code>. Например, если файл состоит из одного слова<span class="Apple-converted-space"> </span><code>"Test"</code>, то браузер автоматически обернёт его в<span class="Apple-converted-space"> </span><code>&lt;html&gt;</code><span class="Apple-converted-space"> </span>и <code>&lt;body&gt;</code>.</p>
+<p><strong>При генерации DOM браузер самостоятельно обрабатывает ошибки в документе, закрывает теги и делает все, чтобы корректно отобразить документ.</strong></p>
+<h2>Методы извлечения информации из тегов средствами iMacros</h2>
+<p>У iMacros есть возможности для извлечения текста и даже html-кода из тегов. Для начала я рекомендую вам установить расширение <a href="https://addons.mozilla.org/ru/firefox/addon/firebug/" target="_blank" rel="nofollow">FireBug</a>, если вы этого еще не сделали. Открывается он по нажатию клавиши F12, либо вы можете нажать в любом месте страницы правой кнопкой и тыкнуть «Инспектировать элемент при помощи Firebug».</p>
+<p><figure class="aligncenter amp-wp-52fc747"><amp-img class="size-medium wp-image-3962 amp-wp-enforced-sizes" src="/wp-content/uploads/les3-1-599x640.png" alt="" width="599" height="640" srcset="/wp-content/uploads/les3-1-599x640.png 599w, /wp-content/uploads/les3-1-768x820.png 768w, /wp-content/uploads/les3-1.png 907w" sizes="(max-width: 599px) 100vw, 599px" layout="intrinsic"></amp-img></figure></p>
+<p> </p>
+<p>Чтобы потренироваться и как следует разобраться, я создал для вас специальную страничку<br><strong><a href="/lessons/lesson3/index.htm" target="_blank" rel="nofollow">https://artstroy.net/lessons/lesson3/index.htm</a></strong></p>
+<p>Давайте приступим, я рекомендую вам сразу открыть эту ссылку в Firefox. Поскольку вам предстоит писать много кода, рекомендую первым делом поставить себе какой-нибудь редактор, например весьма распространенный Notepad++ или же мой любимый и в сто раз более удобный<a href="https://www.sublimetext.com/3" target="_blank" rel="nofollow"> Sublime Text 3</a>, я писал о <a href="/instruments/sublime-text-3-frontend-kit/" target="_blank">плагинах для него</a> и <a href="/instruments/sublime-text-3-vimvintage-mode/" target="_blank">режиме Vim</a> для быстрого и мощного редактирования.</p>
+<p>Давайте нажмем на «Запись» в iMacros, тыкнем по первому заголовку и остановим запись.</p>
+<p><strong>Мы получим вот такой скрипт(Current.iim):</strong></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa1633115624572942" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+VERSION BUILD=8970419 RECORDER=FX
+TAB T=1
+URL GOTO=http://polygon.nagibaka.ru/lessons/lesson3/index.htm
+TAG POS=1 TYPE=H1 ATTR=TXT:Тестовая&lt;SP&gt;страница</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa1633115624572942-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633115624572942-2">2</div><div class="crayon-num" data-line="crayon-626efa1633115624572942-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633115624572942-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa1633115624572942-1"><span class="crayon-e">VERSION </span><span class="crayon-v">BUILD</span><span class="crayon-o">=</span><span class="crayon-cn">8970419</span><span class="crayon-h"> </span><span class="crayon-v">RECORDER</span><span class="crayon-o">=</span><span class="crayon-e">FX</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633115624572942-2"><span class="crayon-i">TAB</span><span class="crayon-h"> </span><span class="crayon-v">T</span><span class="crayon-o">=</span><span class="crayon-cn">1</span></div><div class="crayon-line" id="crayon-626efa1633115624572942-3"><span class="crayon-e">URL </span><span class="crayon-st">GOTO</span><span class="crayon-o">=</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//polygon.nagibaka.ru/lessons/lesson3/index.htm</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633115624572942-4"><span class="crayon-e">TAG </span><span class="crayon-v">POS</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-v">TYPE</span><span class="crayon-o">=</span><span class="crayon-e">H1 </span><span class="crayon-v">ATTR</span><span class="crayon-o">=</span><span class="crayon-v">TXT</span><span class="crayon-o">:</span>Тестовая<span class="crayon-o">&lt;</span><span class="crayon-v">SP</span><span class="crayon-o">&gt;</span>страница</div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0011 seconds] -->
+<p>Давайте переделаем его в JS.<br>
+Создайте новый файл, например test.js. Допустим, нам необходимо получить содержимое тега <code>"&lt;H1&gt;"</code>. Переделаем макрос на js и извлечем из него содержимое тега <code>"&lt;H1&gt;"</code>.</p>
+<p><strong>Результат(test.js):</strong></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa163312a002448484" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+iimPlayCode('TAG POS=1 TYPE=H1 ATTR=TXT:* EXTRACT=TXT');
+iimDisplay(iimGetExtract());</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa163312a002448484-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163312a002448484-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa163312a002448484-1"><span class="crayon-e">iimPlayCode</span><span class="crayon-sy">(</span><span class="crayon-s">'TAG POS=1 TYPE=H1 ATTR=TXT:* EXTRACT=TXT'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163312a002448484-2"><span class="crayon-e">iimDisplay</span><span class="crayon-sy">(</span><span class="crayon-e">iimGetExtract</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>Обратите внимание — я заменил <code>"Тестовая&lt;SP&gt;страница"</code> на <code>"*"</code> — поскольку текст заголовка может быть любым, а звездочка нам говорит, что текст может быть произвольным<br><strong>TYPE=H1</strong> — указывает что мы ищем тег «<code>&lt;H1&gt;</code>«, можно указать любой другой<br><strong>POS=1</strong> — указывает, что мы выбираем первый попавшийся тег <code>&lt;H1&gt;</code>, ведь на странице их может оказаться несколько<br><strong>ATTR=TXT:*</strong> — указывает значение атрибута, в данном случае служебный атрибут, который ищет совпадение в тексте внутри тега<br><strong>EXTRACT=TXT</strong> — указывает, что мы извлекаем текст, также можно указать <code>"EXTRACT=HTM"</code> , чтобы извлечь текст вместе со всеми тегами</p>
+<h2>Методы извлечения информации из тегов средствами Javascript</h2>
+<p>Теперь давайте перепишем код полностью на JS без использования iim-команд. Еще, вместо <code>iimDisplay</code> мы будем использовать <code>window.console.log('any text and vars');</code> Данные, которые мы будем выводить этой командой — будут отображаться в консоли firebug. Такой вариант удобнее по многим причинам, например, можно выводить js-объекты и удобно просматривать их содержимое. А самое главное, при помощи <code>iimDisplay</code> единовременно можно смотреть только последнее выведенное сообщение, а c этой командой мы увидим полный лог. Небольшое примечание, в некоторых старых версиях FF(например 27), <code>window.console.log</code> не всегда работало, и обратите внимание, нужно писать именно <code>window.console.log</code>, несмотря на то, что при создании обычных сайтов, чаще пишут просто<code> console.log</code>, весь наш код выполняется в <a href="/js-imacros-lessons-for-beginners/js-and-imacros-for-beginners-lesson-2/" target="_blank">контексте расширения</a> iMacros, поэтому необходимо добавлять <code>window</code>.</p>
+<p><strong>Код на JS(test.js):</strong></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa1633132832939612" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+var h1Text = window.document.querySelector("h1").innerHTML;
+window.console.log(h1Text); // выведет в консоли "Тестовая страница"</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa1633132832939612-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633132832939612-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa1633132832939612-1"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">h1Text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"h1"</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-v">innerHTML</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633132832939612-2"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-v">h1Text</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// выведет в консоли "Тестовая страница"</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p>Здесь мы использовали поиск элемента по тегу. На самом деле, метод <code>querySelector</code> принимает в качестве параметра любое выражение в формате css-правила. Еще важно знать, что querySelector возвращает только первый элемент из DOM-дерева, который совпал. Чтобы получить все элементы, подходящие под указанное правило, используйте <code>querySelectorAll</code>.</p>
+<p>Приведу несколько примеров:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa163313c255900481" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+// Поиск по классу
+window.document.querySelector(".styled");
+ 
+// Поиск по идентификатору
+window.document.querySelector("#tmp") ;
+ 
+// Поиск по аттрибуту идентификатора с указанием его значения
+window.document.querySelector("[id=tmp]");
+ 
+// Поиск по кастомному аттрибуту, тут только его наличие проверяется
+window.document.querySelector("[data-id]");
+ 
+// Поиск div в котором есть аттрибут title, в котором содержится подстрока '13'
+window.document.querySelector("div[title*='13']");
+ 
+// Поиск последнего и первого div, который находится внутри формы(&lt;form&gt;)
+window.document.querySelector("form div:last-child");
+window.document.querySelector("form div:first-child");
+ 
+// Поиск любых элементов на странице, вернет первый попавшийся
+window.document.querySelector("*"); //Вернет &lt;html&gt;
+window.document.querySelector("html *"); //Вернет &lt;head&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa163313c255900481-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-2">2</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-4">4</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-6">6</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-8">8</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-10">10</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-12">12</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-14">14</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-16">16</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-18">18</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-20">20</div><div class="crayon-num" data-line="crayon-626efa163313c255900481-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa163313c255900481-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa163313c255900481-1"><span class="crayon-c">// Поиск по классу</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-2"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">".styled"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-3"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-4"><span class="crayon-c">// Поиск по идентификатору</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-5"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"#tmp"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-6"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-626efa163313c255900481-7"><span class="crayon-c">// Поиск по аттрибуту идентификатора с указанием его значения</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-8"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"[id=tmp]"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-9"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-10"><span class="crayon-c">// Поиск по кастомному аттрибуту, тут только его наличие проверяется</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-11"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"[data-id]"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-12"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-626efa163313c255900481-13"><span class="crayon-c">// Поиск div в котором есть аттрибут title, в котором содержится подстрока '13'</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-14"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"div[title*='13']"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-15"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-16"><span class="crayon-c">// Поиск последнего и первого div, который находится внутри формы(&lt;form&gt;)</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-17"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"form div:last-child"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-18"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"form div:first-child"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-19"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-20"><span class="crayon-c">// Поиск любых элементов на странице, вернет первый попавшийся</span></div><div class="crayon-line" id="crayon-626efa163313c255900481-21"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"*"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">//Вернет &lt;html&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa163313c255900481-22"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelector</span><span class="crayon-sy">(</span><span class="crayon-s">"html *"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">//Вернет &lt;head&gt;</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0028 seconds] -->
+<p>Вы можете получать список всех элементов, подходящих под заданное правила, используйте для этого <code>querySelectorAll()</code> — он всегда возвращает коллекцию элементов либо null.</p>
+<p>Давайте выведем все ссылки в консоль.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa1633143718801410" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+window.console.log( window.document.querySelectorAll("a") );</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa1633143718801410-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa1633143718801410-1"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelectorAll</span><span class="crayon-sy">(</span><span class="crayon-s">"a"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p>Тут мы видим набор элементов, а если быть точнее, то коллекцию узлов DOM-дерева. Квадратные скобки могут натолкнуть  на мысль о том, что это обычный массив, но это не совсем так. Мы <strong>не сможем</strong> для такой коллекции использовать стандартные методы массива, такие, как <code>.map(), .filter()</code> и крайне удобный <code>.forEach()</code>. Поэтому для перебора и обработки элементов такой коллекции мы будем использовать классический цикл <code>for</code>.</p>
+<p>В коллекции 6 элементов, вы можете нажать на любой и тогда откроется инспектор DOM-дерева и вы увидите элемент, на который нажали.</p>
+<p><figure class="aligncenter amp-wp-48732d5"><amp-img class="size-full wp-image-3963 amp-wp-enforced-sizes" src="/wp-content/uploads/img_57f7118e2743d.png" alt="" width="354" height="342" layout="intrinsic"></amp-img></figure></p>
+<p> </p>
+<p>Хоть это и неполноценный массив, но нам все равно доступно свойство <code>length</code>. Давайте посчитаем количество ссылок в коллекции и выведем для каждой ссылки заголовок и адрес, куда она ссылается. В JS есть несколько вариантов реализации циклов, мы пока используем самый простой <code>for</code>.</p>
+<p><strong>Выводим все ссылки на странице и информацию о них:</strong></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626efa1633149654368752" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+var linkList = window.document.querySelectorAll("a");
+ 
+window.console.log("Links count: ", linkList.length);
+ 
+for (var i = 0; i &lt; linkList.length; i++) {
+    
+    window.console.log('====' + (i + 1) + " Link ===="); // behavior
+ 
+    window.console.log("Link text: ",  linkList[i].innerHTML);
+    window.console.log("Link title: ", linkList[i].getAttribute('title'));
+    window.console.log("Link href: ",  linkList[i].getAttribute('href'));
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626efa1633149654368752-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-2">2</div><div class="crayon-num" data-line="crayon-626efa1633149654368752-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-4">4</div><div class="crayon-num" data-line="crayon-626efa1633149654368752-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-6">6</div><div class="crayon-num" data-line="crayon-626efa1633149654368752-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-8">8</div><div class="crayon-num" data-line="crayon-626efa1633149654368752-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-10">10</div><div class="crayon-num" data-line="crayon-626efa1633149654368752-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-626efa1633149654368752-12">12</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626efa1633149654368752-1"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">linkList</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">querySelectorAll</span><span class="crayon-sy">(</span><span class="crayon-s">"a"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-2"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-626efa1633149654368752-3"><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"Links count: "</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">linkList</span><span class="crayon-sy">.</span><span class="crayon-v">length</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-4"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-626efa1633149654368752-5"><span class="crayon-st">for</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-h"> </span><span class="crayon-v">linkList</span><span class="crayon-sy">.</span><span class="crayon-v">length</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-6"><span class="crayon-h">    </span></div><div class="crayon-line" id="crayon-626efa1633149654368752-7"><span class="crayon-h">    </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">'===='</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">i</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">" Link ===="</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// behavior</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-8"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-626efa1633149654368752-9"><span class="crayon-h">    </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"Link text: "</span><span class="crayon-sy">,</span><span class="crayon-h">  </span><span class="crayon-v">linkList</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-sy">.</span><span class="crayon-v">innerHTML</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-10"><span class="crayon-h">    </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"Link title: "</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">linkList</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-sy">.</span><span class="crayon-e">getAttribute</span><span class="crayon-sy">(</span><span class="crayon-s">'title'</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-626efa1633149654368752-11"><span class="crayon-h">    </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"Link href: "</span><span class="crayon-sy">,</span><span class="crayon-h">  </span><span class="crayon-v">linkList</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-sy">.</span><span class="crayon-e">getAttribute</span><span class="crayon-sy">(</span><span class="crayon-s">'href'</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-626efa1633149654368752-12"><span class="crayon-sy">}</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0034 seconds] -->
+<p>Этот код покажет в консоли количество найденных элементов и выведет информацию о каждой ссылке на странице. Это базовый пример, позже вы научитесь создавать, изменять, фильтровать массивы полученной информации, сохранять в каком угодно виде и разумеется считывать из файлов и использовать данные в своих программах.</p>
+<p>Помимо получения значений аттрибутов при помощи метода <code>getAttribute()</code>, текста внутри тега при помощи innerHTML, мы можем делать разные другие вещи. Чтобы посмотреть доступные методы, вы можете поискать в документации по JS, или воспользоваться автокомплитом из консоли, попробуйте вручную ввести <code>window.document.querySelectorAll("a")[0].</code>  или<code> window.document.querySelector("a").</code>, что будет равнозначно, и после ввода точки появится список поддерживаемых методов и свойств, более подробно о каждом свойстве или методе вы легко найдете в гугле. Подобным образом вы сможете исследовать методы и свойства любого объекта.<br>
+И еще, вы можете указывать несколько селекторов через запятую, например <code>window.document.querySelectorAll("a, .styled")</code></p>
+<p><figure class="aligncenter amp-wp-828e6e0"><amp-img class="size-medium wp-image-3964 amp-wp-enforced-sizes" src="/wp-content/uploads/img_57f76b8aadc4f-640x620.png" alt="" width="640" height="620" srcset="/wp-content/uploads/img_57f76b8aadc4f-640x620.png 640w, /wp-content/uploads/img_57f76b8aadc4f-768x744.png 768w, /wp-content/uploads/img_57f76b8aadc4f.png 983w" sizes="(max-width: 640px) 100vw, 640px" layout="intrinsic"></amp-img></figure></p>
+<p> </p>
+<p>Есть и другие методы для получения нужных нам тегов и извлечения из них различных свойств и атрибутов, но они не особо актуальны, потому что querySelectorAll — это метод, который поддерживают все современные браузеры, обладает куда большим функционалом и у нас нет необходимости использовать устаревшие методы, вроде <code>window.document.getElementById()</code>, <code>window.document.getElementsByClassName()</code>, <code>window.document.getElementsByTagName()</code> и прочие.</p>
+<p>Также, для мощного поиска по тексту веб-страницы, можно использовать регулярные выражения, инструмент невиданной силы и мощи, который заслуживает отдельной книги страниц на 600, о нем я расскажу в следующих уроках.</p>
+<p>Пишите ваши вопросы и комментарии!</p>
+<p><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-color="red" data-pin-height="128"><amp-img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" width="56" height="28" class="amp-wp-enforced-sizes" layout="intrinsic"></amp-img></a></p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/java/imacros/" rel="category tag">Уроки: JS &amp; Imacros</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/imacros/" rel="tag">iMacros</a>, <a href="/tag/javascript/" rel="tag">Javascript</a>, <a href="/tag/js/" rel="tag">js</a>, <a href="/tag/parsing/" rel="tag">парсинг</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/how-get-any-information-with-javascript-lesson-3/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Artstroy &#8212; Искусное веб строительство!</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

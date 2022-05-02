@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Zenno-уроки &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/zennoposter/zenno-uroki/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Selenium Webdriver. Введение</title>
+		<link>/selenium-webdriver-vvedenie/</link>
+		<comments>/selenium-webdriver-vvedenie/#respond</comments>
+		<pubDate>Mon, 12 Nov 2018 09:59:51 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Selenium]]></category>
+		<category><![CDATA[Zenno-уроки]]></category>
+		<category><![CDATA[Уроки C#]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[lesson]]></category>
+		<category><![CDATA[Webdriver]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[уроки]]></category>
+
+		<guid isPermaLink="false">/?p=4393</guid>
+		<description><![CDATA[<p>Selenium Webdriver- популярный инструмент для управления реальным браузером, который можно использовать как для автоматизации тестирования веб приложений, так и для выполнения других рутинных задач, связанных с работой в вебе. Кроме того, Selenium Webdriver- проект&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/selenium-webdriver-vvedenie/">Selenium Webdriver. Введение</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/selenium-webdriver-vvedenie/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Всё о proxy! Прокси то, о чем ты не знал и стеснялся спросить!</title>
+		<link>/vsyo-o-proxy/</link>
+		<comments>/vsyo-o-proxy/#comments</comments>
+		<pubDate>Mon, 12 Feb 2018 18:58:34 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Zenno-уроки]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[прокси]]></category>
+
+		<guid isPermaLink="false">/?p=4136</guid>
+		<description><![CDATA[<p>У многих, особенно на начальных этапах, возникают вопросы касательно прокси (proxy). Эта статья объяснит, что такое прокси, их особенности, особенности взаимодействия с ними в целом и в рамках ZennoPoster&#8217;а. А также как и в каких случаях лучше&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/vsyo-o-proxy/">Всё о proxy! Прокси то, о чем ты не знал и стеснялся спросить!</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/vsyo-o-proxy/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Основные понятия -алгоритм</title>
+		<link>/osnovnie-ponyatia-algoritm/</link>
+		<comments>/osnovnie-ponyatia-algoritm/#respond</comments>
+		<pubDate>Tue, 04 Apr 2017 11:09:47 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Zenno-уроки]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[алгоритм]]></category>
+
+		<guid isPermaLink="false">/?p=3209</guid>
+		<description><![CDATA[<p>Почему легко научиться программировать Вспомните уроки школьного курса физики или геометрии. Изучение программирования похоже на изучение этих предметов: вы создаёте в своём мозгу некую систему координат и затем в разных частях этой системы начинаете формировать фрагменты&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/osnovnie-ponyatia-algoritm/">Основные понятия -алгоритм</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/osnovnie-ponyatia-algoritm/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

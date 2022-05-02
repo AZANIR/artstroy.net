@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Комментарии: BBPress форум &#8212; вышло обновление до версии 2.3</title>
+	<atom:link href="/bbpress-forum-obnovlenie-do-versii-2-3/feed/" rel="self" type="application/rss+xml" />
+	<link>/bbpress-forum-obnovlenie-do-versii-2-3/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Dec 2020 17:15:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+	<item>
+		<title>Автор: corwinsi</title>
+		<link>/bbpress-forum-obnovlenie-do-versii-2-3/#comment-112</link>
+		<dc:creator><![CDATA[corwinsi]]></dc:creator>
+		<pubDate>Sat, 08 Apr 2017 07:02:27 +0000</pubDate>
+		<guid isPermaLink="false">/bbpress-forum-obnovlenie-do-versii-2-3/#comment-112</guid>
+		<description><![CDATA[Que palabras adecuadas... La idea fenomenal, brillante 
+]]></description>
+		<content:encoded><![CDATA[<p>Que palabras adecuadas&#8230; La idea fenomenal, brillante </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

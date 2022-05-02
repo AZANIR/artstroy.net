@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Редирект &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/poleznoe/redirect/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Редирект на html с задержкой &#060;Meta Refresh&#062;</title>
+		<link>/redirekt-na-html-s-zaderzhkojj-meta-refresh-html/</link>
+		<comments>/redirekt-na-html-s-zaderzhkojj-meta-refresh-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 07:22:02 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[306 redirect]]></category>
+		<category><![CDATA[306 редирект]]></category>
+		<category><![CDATA[307 redirect]]></category>
+		<category><![CDATA[307 редирект]]></category>
+		<category><![CDATA[Apache redirect]]></category>
+		<category><![CDATA[Apache редирект]]></category>
+		<category><![CDATA[htaccess redirect]]></category>
+		<category><![CDATA[htaccess редирект]]></category>
+		<category><![CDATA[html redirect]]></category>
+		<category><![CDATA[html редирект]]></category>
+		<category><![CDATA[Meta Refresh redirect]]></category>
+		<category><![CDATA[Meta Refresh редирект]]></category>
+		<category><![CDATA[php header redirect]]></category>
+		<category><![CDATA[php header редирект]]></category>
+		<category><![CDATA[php Location redirect]]></category>
+		<category><![CDATA[php Location редирект]]></category>
+		<category><![CDATA[php redirect]]></category>
+		<category><![CDATA[php редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[RewriteEngine redirect]]></category>
+		<category><![CDATA[RewriteEngine редирект]]></category>
+		<category><![CDATA[временный редирект]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[не используется]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3824</guid>
+		<description><![CDATA[<p>Это особый вид редиректа. Так как он располагается в заголовке html-документа, то страница, на которой он расположен, с одной стороны является полноценной страницей &#8212; на най может присутствовать текст, картинки и т.д. А с&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/redirekt-na-html-s-zaderzhkojj-meta-refresh-html/">Редирект на html с задержкой &lt;Meta Refresh&gt;</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/redirekt-na-html-s-zaderzhkojj-meta-refresh-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Редирект на .htaccess (RewriteEngine)</title>
+		<link>/redirekt-na-htaccess-rewriteengine-html/</link>
+		<comments>/redirekt-na-htaccess-rewriteengine-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 07:20:06 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[306 redirect]]></category>
+		<category><![CDATA[306 редирект]]></category>
+		<category><![CDATA[307 redirect]]></category>
+		<category><![CDATA[307 редирект]]></category>
+		<category><![CDATA[Apache redirect]]></category>
+		<category><![CDATA[Apache редирект]]></category>
+		<category><![CDATA[htaccess redirect]]></category>
+		<category><![CDATA[htaccess редирект]]></category>
+		<category><![CDATA[php header redirect]]></category>
+		<category><![CDATA[php header редирект]]></category>
+		<category><![CDATA[php Location redirect]]></category>
+		<category><![CDATA[php Location редирект]]></category>
+		<category><![CDATA[php redirect]]></category>
+		<category><![CDATA[php редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[RewriteEngine redirect]]></category>
+		<category><![CDATA[RewriteEngine редирект]]></category>
+		<category><![CDATA[временный редирект]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[не используется]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3822</guid>
+		<description><![CDATA[<p>Что такое .htaccess? .htaccess &#8212; это специальный файл веб-сервера Apache, в котором записаны инструкции для управления поведением сервера в этой папке, и во всех вложенных (если в них отсутствуют свои .htaccess). Как использовать? Для&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/redirekt-na-htaccess-rewriteengine-html/">Редирект на .htaccess (RewriteEngine)</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/redirekt-na-htaccess-rewriteengine-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Пишем редирект на php (header)</title>
+		<link>/pishem-redirekt-na-php-header-html/</link>
+		<comments>/pishem-redirekt-na-php-header-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 07:18:17 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[306 redirect]]></category>
+		<category><![CDATA[306 редирект]]></category>
+		<category><![CDATA[307 redirect]]></category>
+		<category><![CDATA[307 редирект]]></category>
+		<category><![CDATA[php header redirect]]></category>
+		<category><![CDATA[php header редирект]]></category>
+		<category><![CDATA[php Location redirect]]></category>
+		<category><![CDATA[php Location редирект]]></category>
+		<category><![CDATA[php redirect]]></category>
+		<category><![CDATA[php редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[временный редирект]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[не используется]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3820</guid>
+		<description><![CDATA[<p>Как сделать? В php есть замечательная функция header, которая разрешает не только подменять стандартные заголовки, но и добавлять новые. Как использовать? Для редиректа на php используется функция header &#8212; с добавлением заголовка Location либо&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/pishem-redirekt-na-php-header-html/">Пишем редирект на php (header)</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/pishem-redirekt-na-php-header-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>307 редирект</title>
+		<link>/307-2/</link>
+		<comments>/307-2/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 07:16:39 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[306 redirect]]></category>
+		<category><![CDATA[306 редирект]]></category>
+		<category><![CDATA[307 redirect]]></category>
+		<category><![CDATA[307 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[временный редирект]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[не используется]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3818</guid>
+		<description><![CDATA[<p>Что это за редирект? Временный редирект (Temporary Redirect) означает, что необходимо запросить документ, переданный в заголовке Location тем же методом (GET, POST, HEAD), что и исходный документ. Данный редирект был введен вместе с 303&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/307-2/">307 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/307-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>306</title>
+		<link>/306-2/</link>
+		<comments>/306-2/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:52:37 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[306 redirect]]></category>
+		<category><![CDATA[306 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[не используется]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3803</guid>
+		<description><![CDATA[<p>Что это за редирект? 306 редирект на данный момент не используется. Он использовался в прошлых реализациях http-протокола, и на данный момент зарезервирован для дальнейшего использования.</p>
+<p>The post <a rel="nofollow" href="/306-2/">306</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/306-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>305 редирект</title>
+		<link>/305-redirekt-ispolzujj-proksi-html/</link>
+		<comments>/305-redirekt-ispolzujj-proksi-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:51:15 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[305 redirect]]></category>
+		<category><![CDATA[305 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[используй прокси]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3801</guid>
+		<description><![CDATA[<p>Что это за редирект? Используй прокси (Use Proxy). Данный редирект означает, что доступ к этой странице или сайту возможен только через прокси, адрес которого передается в заголовке Location. Как это работает? Браузер запрашивает страницу.&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/305-redirekt-ispolzujj-proksi-html/">305 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/305-redirekt-ispolzujj-proksi-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>304 редирект</title>
+		<link>/304-redirekt-dokument-ne-izmenilsja-html/</link>
+		<comments>/304-redirekt-dokument-ne-izmenilsja-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:50:00 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[304 redirect]]></category>
+		<category><![CDATA[304 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[документ не изменился]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3799</guid>
+		<description><![CDATA[<p>Что это за редирект? Документ не изменился (Not Modified) &#8212; такой ответ может получить браузер в случае, если запрашиваемый документ не изменился со времени прошлого обращения к нему, и нужно взять его из локального&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/304-redirekt-dokument-ne-izmenilsja-html/">304 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/304-redirekt-dokument-ne-izmenilsja-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>303 редирект</title>
+		<link>/303-redirekt-smotri-drugoe-html/</link>
+		<comments>/303-redirekt-smotri-drugoe-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:48:46 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[303 redirect]]></category>
+		<category><![CDATA[303 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+		<category><![CDATA[смотри другое]]></category>
+
+		<guid isPermaLink="false">/?p=3797</guid>
+		<description><![CDATA[<p>Что это за редирект? Смотри другое (See Other) &#8212; это специальный редирект, который говорит о том, что запрошенный документ найден. Но на него следует перейти используя метод GET, вне зависимости от того метода, каким&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/303-redirekt-smotri-drugoe-html/">303 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/303-redirekt-smotri-drugoe-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>302 редирект</title>
+		<link>/302-redirekt-dokument-najjden-html/</link>
+		<comments>/302-redirekt-dokument-najjden-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:47:41 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[302 redirect]]></category>
+		<category><![CDATA[302 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[документ найден]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+
+		<guid isPermaLink="false">/?p=3795</guid>
+		<description><![CDATA[<p>Что это за редирект? Документ найден (Found). Данный редирект является временным. Используется для того, чтобы дать знать пользователям и поисковикам о том, что запрошенная страница временно недоступна. Зачастую используется при проведении каких-либо технических работ&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/302-redirekt-dokument-najjden-html/">302 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/302-redirekt-dokument-najjden-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>301 редирект</title>
+		<link>/301-redirekt-peremeshhen-navsegda-html/</link>
+		<comments>/301-redirekt-peremeshhen-navsegda-html/#respond</comments>
+		<pubDate>Tue, 11 Jul 2017 06:46:39 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Редирект]]></category>
+		<category><![CDATA[300 redirect]]></category>
+		<category><![CDATA[300 редирект]]></category>
+		<category><![CDATA[301 redirect]]></category>
+		<category><![CDATA[301 редирект]]></category>
+		<category><![CDATA[redirect]]></category>
+		<category><![CDATA[множественный выбор]]></category>
+		<category><![CDATA[переадресация]]></category>
+		<category><![CDATA[перемещен навсегда]]></category>
+		<category><![CDATA[редирект]]></category>
+
+		<guid isPermaLink="false">/?p=3793</guid>
+		<description><![CDATA[<p>Что это за редирект? Перемещен навсегда (Moved Permanently) редирект сообщает браузеру и поисковой машине о том, что запрошенный адрес страницы не существует. И навсегда перемещен по новому адресу, который указывается в заголовке после Location,&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/301-redirekt-peremeshhen-navsegda-html/">301 редирект</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/301-redirekt-peremeshhen-navsegda-html/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

@@ -1,0 +1,647 @@
+<!doctype html>
+<html amp lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="&nbsp; 26 октября 2016 года мир бесплатных SSL сертификатов для сайтов был огорчен печальной новостью: начиная с Firefox 51 будут считаться недействительными сертификаты, которые были выданы компаниями WoSign и StartCom после 21 октября 2016&#046;&#046;&#046;" />
+<meta name="twitter:title" content="Бесплатные сертификаты SSL от LetsEncrypt в панели управления VestaCP на CentOS 7 | Artstroy - Искусное веб строительство!" />
+<meta name="twitter:image" content="https://artstroy.net/wp-content/uploads/ssl.jpg" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Бесплатные сертификаты SSL от LetsEncrypt в панели управления VestaCP на CentOS 7 | Artstroy - Искусное веб строительство!" />
+<meta property="og:description" content="&nbsp; 26 октября 2016 года мир бесплатных SSL сертификатов для сайтов был огорчен печальной новостью: начиная с Firefox 51 будут считаться недействительными сертификаты, которые были выданы компаниями WoSign и StartCom после 21 октября 2016&#046;&#046;&#046;" />
+<meta property="og:url" content="https://artstroy.net/besplatnye-sertifikaty-ssl-ot-letsencrypt-v-paneli-upravleniya-vestacp-na-centos-7/" />
+<meta property="og:site_name" content="Artstroy - Искусное веб строительство!" />
+<meta property="article:tag" content="centos" />
+<meta property="article:tag" content="ssl" />
+<meta property="article:tag" content="vestaCP" />
+<meta property="article:section" content="Домены и хостинг" />
+<meta property="article:published_time" content="2017-03-31T18:04:10+00:00" />
+<meta property="article:modified_time" content="2017-03-31T18:04:29+00:00" />
+<meta property="og:updated_time" content="2017-03-31T18:04:29+00:00" />
+<meta property="og:image" content="https://artstroy.net/wp-content/uploads/ssl.jpg" />
+<meta property="og:image:secure_url" content="https://artstroy.net/wp-content/uploads/ssl.jpg" />
+<meta property="og:image:width" content="650" />
+<meta property="og:image:height" content="344" />
+	<title>Бесплатные сертификаты SSL от LetsEncrypt в панели управления VestaCP на CentOS 7 | Artstroy - Искусное веб строительство!</title>
+		<link rel="canonical" href="/besplatnye-sertifikaty-ssl-ot-letsencrypt-v-paneli-upravleniya-vestacp-na-centos-7/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"Artstroy - \u0418\u0441\u043a\u0443\u0441\u043d\u043e\u0435 \u0432\u0435\u0431 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e!"},"@type":"Article","mainEntityOfPage":"https:\/\/artstroy.net\/besplatnye-sertifikaty-ssl-ot-letsencrypt-v-paneli-upravleniya-vestacp-na-centos-7\/","headline":"\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u044b SSL \u043e\u0442 LetsEncrypt \u0432 \u043f\u0430\u043d\u0435\u043b\u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f VestaCP \u043d\u0430 CentOS 7","datePublished":"2017-03-31T18:04:10+00:00","dateModified":"2017-03-31T18:04:29+00:00","author":{"@type":"Person","name":"ArtStroy"},"image":{"@type":"ImageObject","url":"https:\/\/artstroy.net\/wp-content\/uploads\/ssl.jpg","width":650,"height":344}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 600px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-131429e{max-width:650px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{margin-top:12px;margin-bottom:12px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fbb711c{font-size:12px;height:18px;line-height:18px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6986ee0{min-height:16.8px;line-height:16.8px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c86a462{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-78f2ab3{max-width:750px}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				Artstroy &#8212; Искусное веб строительство!			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Бесплатные сертификаты SSL от LetsEncrypt в панели управления VestaCP на CentOS 7</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/ad9373be8f728ddda30d1b039f115ccf?s=24&#038;d=mm&#038;r=g" alt="ArtStroy" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">ArtStroy</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-03-31T20:04:10+00:00">
+		5 лет ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p><figure class="aligncenter amp-wp-131429e"><amp-img class="size-full wp-image-2986  amp-wp-enforced-sizes" src="/wp-content/uploads/ssl.jpg" width="650" height="344" srcset="/wp-content/uploads/ssl.jpg 650w, /wp-content/uploads/ssl-640x339.jpg 640w" sizes="(max-width: 650px) 100vw, 650px" layout="intrinsic"></amp-img></figure></p>
+<p> </p>
+<p>26 октября 2016 года мир бесплатных SSL сертификатов для сайтов был огорчен печальной новостью: начиная с Firefox 51 будут считаться недействительными сертификаты, которые были выданы компаниями WoSign и StartCom после 21 октября 2016 года.</p>
+<p>Подробнее о причинах такого решения читайте <a href="https://geektimes.ru/post/281188/" target="_blank">здесь</a>.</p>
+<p>Что делать в такой ситуации тем у кого скоро заканчивается срок действия текущих сертификатов и необходимо их продление в ближайшее время? Очевидно, что нужно обратить внимание на еще один сервис раздающий бесплатные SSL сертификаты для сайтов — <a href="https://letsencrypt.org/" target="_blank">Let’s Encrypt</a>.</p>
+<h2>Для кого эта статья</h2>
+<p>В данной статье приведен пример автоматического получения бесплатного SSL сертификата, когда на сервере установлена операционная система CentOS 7.X и панель управления <a href="http://vestacp.com/" target="_blank">VestaCP</a> версии 0.9.8-16.</p>
+<p>В качестве веб-сервера у меня используется связка Apache+Nginx.</p>
+<h2>Алгоритм получения бесплатного сертификата</h2>
+<p>Выполните последовательно две команды из консоли, сначала:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0bb724605931" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+#v-add-letsencrypt-user USERNAME</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0bb724605931-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0bb724605931-1"><span class="crayon-p">#v-add-letsencrypt-user USERNAME</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>где USERNAME — имя пользователя в панели управления VestaCP.</p>
+<p>а затем:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0c4669855558" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+#v-add-letsencrypt-domain USERNAME DOMAINNAME.TLD</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0c4669855558-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0c4669855558-1"><span class="crayon-p">#v-add-letsencrypt-domain USERNAME DOMAINNAME.TLD</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>где USERNAME — имя пользователя в панели управления VestaCP, а DOMAINNAME.TLD — доменное имя зарегистрированное в панели VestaCP у данного пользователя.</p>
+<h2>Ошибка LetsEncrypt account registration 400 на CentOS 7</h2>
+<p>Если при попытке создания сертификата вы получаете сообщение об ошибке:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0c9734350811" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+/usr/local/vesta/bin/v-add-letsencrypt-user: line 59: xxd: command not found
+/usr/local/vesta/bin/v-add-letsencrypt-user: line 63: xxd: command not found
+Error: LetsEncrypt account registration 400</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0c9734350811-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626ef91e0e0c9734350811-2">2</div><div class="crayon-num" data-line="crayon-626ef91e0e0c9734350811-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0c9734350811-1"><span class="crayon-o">/</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">local</span><span class="crayon-o">/</span><span class="crayon-v">vesta</span><span class="crayon-o">/</span><span class="crayon-v">bin</span><span class="crayon-o">/</span><span class="crayon-v">v</span><span class="crayon-o">-</span><span class="crayon-v">add</span><span class="crayon-o">-</span><span class="crayon-v">letsencrypt</span><span class="crayon-o">-</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-i">line</span><span class="crayon-h"> </span><span class="crayon-cn">59</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">xxd</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">command </span><span class="crayon-st">not</span><span class="crayon-h"> </span><span class="crayon-v">found</span></div><div class="crayon-line crayon-striped-line" id="crayon-626ef91e0e0c9734350811-2"><span class="crayon-o">/</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">local</span><span class="crayon-o">/</span><span class="crayon-v">vesta</span><span class="crayon-o">/</span><span class="crayon-v">bin</span><span class="crayon-o">/</span><span class="crayon-v">v</span><span class="crayon-o">-</span><span class="crayon-v">add</span><span class="crayon-o">-</span><span class="crayon-v">letsencrypt</span><span class="crayon-o">-</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-i">line</span><span class="crayon-h"> </span><span class="crayon-cn">63</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">xxd</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">command </span><span class="crayon-st">not</span><span class="crayon-h"> </span><span class="crayon-e">found</span></div><div class="crayon-line" id="crayon-626ef91e0e0c9734350811-3"><span class="crayon-v">Error</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">LetsEncrypt </span><span class="crayon-e">account </span><span class="crayon-i">registration</span><span class="crayon-h"> </span><span class="crayon-cn">400</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0017 seconds] -->
+<p>то сначала установите недостающее:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0ce876854959" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+#yum install vim-common</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0ce876854959-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0ce876854959-1"><span class="crayon-p">#yum install vim-common</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>а затем отредактируйте 44 строчку в файле: <strong>/usr/local/vesta/bin/v-add-letsencrypt-user</strong>, заменив ее на</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0d2402810974" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+agreement='https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf'</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0d2402810974-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0d2402810974-1"><span class="crayon-v">agreement</span><span class="crayon-o">=</span><span class="crayon-s">'https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf'</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>Также может прилететь вот такое уведомление об ошибке при попітке создать сертификат.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0d6418376544" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+"Error: LetsEncrypt challenge request 500
+sed: can't read /usr/local/vesta/data/queue/letsencrypt.pipe: No such file or directory"</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0d6418376544-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626ef91e0e0d6418376544-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0d6418376544-1"><span class="crayon-s">"Error: LetsEncrypt challenge request 500</span></div><div class="crayon-line crayon-striped-line" id="crayon-626ef91e0e0d6418376544-2"><span class="crayon-s">sed: can't read /usr/local/vesta/data/queue/letsencrypt.pipe: No such file or directory"</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>Оказывается почему-то не создался файл <span class="posthilit">letsencrypt.pipe</span>. Но не беда и тут нам на помощь приходит смекалка и руки!</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0db873213036" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+touch /usr/local/vesta/data/queue/letsencrypt.pipe</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0db873213036-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0db873213036-1"><span class="crayon-v">touch</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">local</span><span class="crayon-o">/</span><span class="crayon-v">vesta</span><span class="crayon-o">/</span><span class="crayon-v">data</span><span class="crayon-o">/</span><span class="crayon-v">queue</span><span class="crayon-o">/</span><span class="crayon-v">letsencrypt</span><span class="crayon-sy">.</span><span class="crayon-v">pipe</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p>После этого получение сертификата должно пройти без ошибок.</p>
+<h2>Проверка полученного сертификата</h2>
+<p>Для проверки зайдите в настройки домена и проверьте настройки HTTPS, вы должны увидеть настроенные сертификаты:<br><amp-img class="alignnone size-full wp-image-2987 amp-wp-enforced-sizes" src="/wp-content/uploads/letsencrypt_0.jpg" alt="letsencrypt_0" width="672" height="613" srcset="/wp-content/uploads/letsencrypt_0.jpg 672w, /wp-content/uploads/letsencrypt_0-640x584.jpg 640w" sizes="(max-width: 672px) 100vw, 672px" layout="intrinsic"></amp-img></p>
+<p>Затем посетите свой сайт по HTTPS протоколу и посмотрите его сертификат:<br><amp-img class="alignnone size-full wp-image-2988 amp-wp-enforced-sizes" src="/wp-content/uploads/letsencrypt_1.jpg" alt="letsencrypt_1" width="413" height="215" layout="intrinsic"></amp-img></p>
+<p><amp-img class="alignnone size-full wp-image-2989 amp-wp-enforced-sizes" src="/wp-content/uploads/letsencrypt_2.jpg" alt="letsencrypt_2" width="600" height="658" srcset="/wp-content/uploads/letsencrypt_2.jpg 600w, /wp-content/uploads/letsencrypt_2-584x640.jpg 584w" sizes="(max-width: 600px) 100vw, 600px" layout="intrinsic"></amp-img></p>
+<div class="amp-wp-78f2ab3"></div>
+<h2>Автоматическое продление сертификата LetsEncrypt</h2>
+<p>Сертификат LetsEncrypt выдается на 90 дней. Когда до окончания срока его действия останется меньше 30 дней, то сертификат можно будет продлить, для этого необходимо выполнить в консоли следующее:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0e0510065978" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+#v-update-letsencrypt-ssl</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0e0510065978-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0e0510065978-1"><span class="crayon-p">#v-update-letsencrypt-ssl</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>Эта команда обновляет ssl сертификаты сразу для всех доменов и пользователей.</p>
+<p>При желании эту задачу можно возложить на <strong>CRON</strong>. В моем примере попытка обновления SSL сертификатов будет предприниматься раз в 15 дней в 12-00. Сертификаты, у которых до окончания срока действия остается менее 30 дней, будут автоматически обновлены.<br><amp-img class="alignnone size-full wp-image-2990 amp-wp-enforced-sizes" src="/wp-content/uploads/letsencrypt_3.jpeg" alt="" width="798" height="535" srcset="/wp-content/uploads/letsencrypt_3.jpeg 798w, /wp-content/uploads/letsencrypt_3-640x429.jpeg 640w, /wp-content/uploads/letsencrypt_3-768x515.jpeg 768w" sizes="(max-width: 798px) 100vw, 798px" layout="intrinsic"></amp-img></p>
+<h2>Переадресация на HTTPS</h2>
+<p>Для автоматической переадресации посетителей сайта на <strong>HTTPS</strong> добавьте следующие строки в файл <em>.htaccess</em></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-626ef91e0e0e5104092357" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-626ef91e0e0e5104092357-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-626ef91e0e0e5104092357-2">2</div><div class="crayon-num" data-line="crayon-626ef91e0e0e5104092357-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-626ef91e0e0e5104092357-1"><span class="crayon-e">RewriteEngine</span><span class="crayon-h"> </span><span class="crayon-e">On</span></div><div class="crayon-line crayon-striped-line" id="crayon-626ef91e0e0e5104092357-2"><span class="crayon-e">RewriteCond</span><span class="crayon-h"> </span><span class="crayon-o">%</span><span class="crayon-sy">{</span><span class="crayon-v">HTTPS</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-e">off</span></div><div class="crayon-line" id="crayon-626ef91e0e0e5104092357-3"><span class="crayon-e">RewriteRule</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-sy">.</span><span class="crayon-o">*</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//%{HTTP_HOST}%{REQUEST_URI} [R,L]</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p></p>
+<p><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-color="red" data-pin-height="128"><amp-img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" width="56" height="28" class="amp-wp-enforced-sizes" layout="intrinsic"></amp-img></a></p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/poleznoe/domeny-i-xosting/" rel="category tag">Домены и хостинг</a>, <a href="/category/doorway/" rel="category tag">Дорвейство</a>, <a href="/category/poleznoe/" rel="category tag">Полезное</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/centos/" rel="tag">centos</a>, <a href="/tag/ssl/" rel="tag">ssl</a>, <a href="/tag/vestacp/" rel="tag">vestaCP</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/besplatnye-sertifikaty-ssl-ot-letsencrypt-v-paneli-upravleniya-vestacp-na-centos-7/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Artstroy &#8212; Искусное веб строительство!</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

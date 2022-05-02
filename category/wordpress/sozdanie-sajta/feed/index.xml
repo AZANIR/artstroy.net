@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Создание сайта &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/wordpress/sozdanie-sajta/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Оптимизация контента перед публикацией в блоге</title>
+		<link>/optimizaciya-kontenta-pered-publikaciej-v-bloge/</link>
+		<comments>/optimizaciya-kontenta-pered-publikaciej-v-bloge/#respond</comments>
+		<pubDate>Thu, 01 Mar 2018 14:55:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[Советы]]></category>
+		<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[Оптимизация]]></category>
+
+		<guid isPermaLink="false">/?p=4169</guid>
+		<description><![CDATA[<p>Сегодня мы поговорим о наборе ключевых шагов для новичков, направленных на оптимизацию контента, которые нужно проделать перед тем, как вы нажмете кнопку «опубликовать». С первого взгляда может показаться, что это слишком, но на самом&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/optimizaciya-kontenta-pered-publikaciej-v-bloge/">Оптимизация контента перед публикацией в блоге</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/optimizaciya-kontenta-pered-publikaciej-v-bloge/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Невероятная статистика и факты о WordPress</title>
+		<link>/neveroyatnaya-statistika-fakty-o-wordpress/</link>
+		<comments>/neveroyatnaya-statistika-fakty-o-wordpress/#respond</comments>
+		<pubDate>Fri, 22 Sep 2017 11:43:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[Советы]]></category>
+
+		<guid isPermaLink="false">/?p=3914</guid>
+		<description><![CDATA[<p>WordPress проделал долгий путь с тех пор, как был впервые  запущен в 2003 году. Теперь это наиболее популярная система управления контентом, которая стала доминирующей силой на просторах интернета, и движет 28.6% всех веб-сайтов. Мы&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/neveroyatnaya-statistika-fakty-o-wordpress/">Невероятная статистика и факты о WordPress</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/neveroyatnaya-statistika-fakty-o-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Ускоряем любой WordPress сайт 18 способов</title>
+		<link>/speed-up-wordpress/</link>
+		<comments>/speed-up-wordpress/#comments</comments>
+		<pubDate>Wed, 19 Apr 2017 05:04:00 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[Советы]]></category>
+
+		<guid isPermaLink="false">/?p=3395</guid>
+		<description><![CDATA[<p>Всем привет, друзья. Самые разные пользователи по всему миру используют сегодня WordPress для создания своих сайтов совершенно разных тематик и направлений. В результате, на этой системе управления контентом работает практически половина сайтов, в основе&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/speed-up-wordpress/">Ускоряем любой WordPress сайт 18 способов</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/speed-up-wordpress/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Создание виджета с таймером обратного отсчета времени</title>
+		<link>/sozdanie-vidzheta-s-tajmerom-obratnogo-otscheta-vremeni/</link>
+		<comments>/sozdanie-vidzheta-s-tajmerom-obratnogo-otscheta-vremeni/#respond</comments>
+		<pubDate>Tue, 14 Mar 2017 13:50:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Кастомизация]]></category>
+		<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[Плагины]]></category>
+		<category><![CDATA[Советы]]></category>
+
+		<guid isPermaLink="false">/sozdanie-vidzheta-s-tajmerom-obratnogo-otscheta-vremeni/</guid>
+		<description><![CDATA[<p>Всем доброй пятницы, уважаемые читатели. Сегодня у нас перевод полезной, на мой взгляд, статьи о том, как создать плагин — таймер. Для чего это может быть нужно? Для разных целей. Например, вы можете сделать&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/sozdanie-vidzheta-s-tajmerom-obratnogo-otscheta-vremeni/">Создание виджета с таймером обратного отсчета времени</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/sozdanie-vidzheta-s-tajmerom-obratnogo-otscheta-vremeni/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Как лучше всего добавить пользовательский код в WordPress?</title>
+		<link>/kak-luchshe-vsego-dobavit-polzovatelskij-kod-v-wordpress/</link>
+		<comments>/kak-luchshe-vsego-dobavit-polzovatelskij-kod-v-wordpress/#respond</comments>
+		<pubDate>Mon, 13 Jul 2015 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[Советы]]></category>
+
+		<guid isPermaLink="false">http://kak-luchshe-vsego-dobavit-polzovatelskij-kod-v-wordpress/</guid>
+		<description><![CDATA[<p>&#160; Перевод статьи Бренды Беррот о том, как новичкам следует добавлять свой код на сайт. Люди создают WordPress-сайты каждый божий день. Некоторые из них пользуются этой системой управления контентом в первозданном виде: не меняя&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/kak-luchshe-vsego-dobavit-polzovatelskij-kod-v-wordpress/">Как лучше всего добавить пользовательский код в WordPress?</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/kak-luchshe-vsego-dobavit-polzovatelskij-kod-v-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>BBPress форум &#8212; вышло обновление до версии 2.3</title>
+		<link>/bbpress-forum-obnovlenie-do-versii-2-3/</link>
+		<comments>/bbpress-forum-obnovlenie-do-versii-2-3/#comments</comments>
+		<pubDate>Thu, 27 Nov 2014 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Плагины]]></category>
+		<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[BBpress]]></category>
+		<category><![CDATA[Форумы]]></category>
+
+		<guid isPermaLink="false">/bbpress-forum-obnovlenie-do-versii-2-3/</guid>
+		<description><![CDATA[<p>Всем удачного понедельника, дорогие читатели. Пришла хорошая новость для владельцев популярного форумного WordPress плагина — bbpress. Форум обновился до версии 2.3.  Отрадно, что разработчик все время заботится и улучшает этот без сомнения, удачный плагин.&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/bbpress-forum-obnovlenie-do-versii-2-3/">BBPress форум &#8212; вышло обновление до версии 2.3</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/bbpress-forum-obnovlenie-do-versii-2-3/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ZennoSnippets &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/zennoposter/zennosnippets/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Ошибки шаблона, с моментальным оповещением в telegram.</title>
+		<link>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram/</link>
+		<comments>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram/#comments</comments>
+		<pubDate>Mon, 19 Mar 2018 15:54:31 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Zenno-шаблоны]]></category>
+		<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[telegram]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[сниппет]]></category>
+
+		<guid isPermaLink="false">/?p=4275</guid>
+		<description><![CDATA[<p>Как часто вы задумывались ,что ошибки шаблона нам нужно как-то оповещать к примеру в телеграм (telegram). я говорю не о новых шаблонах , а о шаблонах с которыми вы работаете долго и постоянно к&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram/">Ошибки шаблона, с моментальным оповещением в telegram.</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Как удалить слова в списке с помощью C#</title>
+		<link>/kak-udalit-slova-v-spiske/</link>
+		<comments>/kak-udalit-slova-v-spiske/#respond</comments>
+		<pubDate>Tue, 16 Jan 2018 11:48:32 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[сниппет]]></category>
+		<category><![CDATA[стоп слова]]></category>
+		<category><![CDATA[удалить стоп слова]]></category>
+
+		<guid isPermaLink="false">/?p=4081</guid>
+		<description><![CDATA[<p>Как удалить слова в списке или как удалить стоп слова в списке , подобные вопросы задают очень часто на просторах интернета. Уже и софта придумали много, но мы хотим эту фичу использовать у себя&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/kak-udalit-slova-v-spiske/">Как удалить слова в списке с помощью C#</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/kak-udalit-slova-v-spiske/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>С# взять рандомно несколько строк из списка</title>
+		<link>/s-vzyat-randomno-neskolko-strok-iz-spiska/</link>
+		<comments>/s-vzyat-randomno-neskolko-strok-iz-spiska/#comments</comments>
+		<pubDate>Sat, 04 Nov 2017 19:14:56 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[с#]]></category>
+		<category><![CDATA[сниппет]]></category>
+
+		<guid isPermaLink="false">/?p=3967</guid>
+		<description><![CDATA[<p>&#160; Возник вопрос как взять рандомно несколько строк из списка. Делаем это на кубиках и делаем это на коде, ведь мы не ищем простых путей. И так начинаем делать все на кубиках с первого&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/s-vzyat-randomno-neskolko-strok-iz-spiska/">С# взять рандомно несколько строк из списка</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/s-vzyat-randomno-neskolko-strok-iz-spiska/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Операции с профилем &#8212; С# Zennoposter snippets</title>
+		<link>/s-operacii-s-profilem/</link>
+		<comments>/s-operacii-s-profilem/#comments</comments>
+		<pubDate>Wed, 23 Aug 2017 06:58:00 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Csharp]]></category>
+		<category><![CDATA[profile]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[профиль]]></category>
+		<category><![CDATA[сниппет]]></category>
+
+		<guid isPermaLink="false">/?p=3898</guid>
+		<description><![CDATA[<p>Для работы в интернете ZennoPoster автоматически генерирует профиль человека &#8212; имя, фамилия, дата рождения, e-mail, национальность и другие параметры. Профиль можно сохранять и загружать в шаблон, используя, таким образом, различные профили для работы на&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/s-operacii-s-profilem/">Операции с профилем &#8212; С# Zennoposter snippets</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/s-operacii-s-profilem/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>C# MinValue и MaxValue  минимум и максимум</title>
+		<link>/c-minvalue-i-maxvalue-minimum-i-maksimum/</link>
+		<comments>/c-minvalue-i-maxvalue-minimum-i-maksimum/#comments</comments>
+		<pubDate>Thu, 08 Jun 2017 06:05:16 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[MaxValue]]></category>
+		<category><![CDATA[MinValue]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[максимум]]></category>
+		<category><![CDATA[минимум]]></category>
+
+		<guid isPermaLink="false">/?p=3563</guid>
+		<description><![CDATA[<p>Находим минимум (минимальное значение) при помощи MinValue  и максимум (максимальное значение) при помощи MaxValue. Zennoposter Возникла задача из списка бирж выбрать биржу с самым максимальным и самым минимальным значением цены. Первое что начинаешь делать это&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/c-minvalue-i-maxvalue-minimum-i-maksimum/">C# MinValue и MaxValue  минимум и максимум</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/c-minvalue-i-maxvalue-minimum-i-maksimum/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>С# Удалить все строки из указанных списков, списка</title>
+		<link>/udalit-vse-stroki-iz-ukazannyx-spiskov/</link>
+		<comments>/udalit-vse-stroki-iz-ukazannyx-spiskov/#respond</comments>
+		<pubDate>Tue, 23 May 2017 08:54:32 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[сниппет]]></category>
+
+		<guid isPermaLink="false">/?p=3514</guid>
+		<description><![CDATA[<p>Удалить все строки из указанных списков, списка. Частенько в работе с проектами по регистрации или заполнении чего-то необходимо очищать список с набором переменных для нового парсинга или например список с проксями и т.д. Zennoposter&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/udalit-vse-stroki-iz-ukazannyx-spiskov/">С# Удалить все строки из указанных списков, списка</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/udalit-vse-stroki-iz-ukazannyx-spiskov/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>С# парсинг в список</title>
+		<link>/s-parsing-v-spisok/</link>
+		<comments>/s-parsing-v-spisok/#respond</comments>
+		<pubDate>Tue, 21 Mar 2017 13:06:21 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[List]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[парсинг в список]]></category>
+
+		<guid isPermaLink="false">/?p=2873</guid>
+		<description><![CDATA[<p>Приветствую дорогие читатели блога. Так как вы имеете Zennoposter то вам часто приходится парсить. И не только, чтобы просто сложить все в файл, а и собрать несколько элементов в список для дальнейшей обработки. &#160;&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/s-parsing-v-spisok/">С# парсинг в список</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/s-parsing-v-spisok/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>С# взять несколько строк из списка</title>
+		<link>/s-vzyat-neskolko-strok-iz-spiska/</link>
+		<comments>/s-vzyat-neskolko-strok-iz-spiska/#comments</comments>
+		<pubDate>Tue, 14 Mar 2017 14:21:30 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[Csharp]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[несколько строк из списка]]></category>
+
+		<guid isPermaLink="false">/?p=2482</guid>
+		<description><![CDATA[<p>Привет всем и так недавно у меня появилась задача взять несколько строк из списка, примерно 5 строк. Но не просто взять несколько строк из списка и положить их в переменные, а еще удалить с&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/s-vzyat-neskolko-strok-iz-spiska/">С# взять несколько строк из списка</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/s-vzyat-neskolko-strok-iz-spiska/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Рандомный текст С# ( randon char C#)</title>
+		<link>/randomnyj-tekst/</link>
+		<comments>/randomnyj-tekst/#respond</comments>
+		<pubDate>Wed, 08 Mar 2017 09:27:48 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[Csharp]]></category>
+		<category><![CDATA[randon char]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Рандомный текст]]></category>
+
+		<guid isPermaLink="false">/?p=132</guid>
+		<description><![CDATA[<p>Начало Приветствую вас любители зеннопостера.   Недавно делая шаблон для добавления сабдоменов в панели хостинга, я столкнулся с потребностью сгенерировать рандомный текст в определенном количестве. Ну и как всегда мы идем в гуглить и&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/randomnyj-tekst/">Рандомный текст С# ( randon char C#)</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/randomnyj-tekst/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Получаем список файлов в папке. С#</title>
+		<link>/poluchaem-spisok-fajlov-v-papke-s/</link>
+		<comments>/poluchaem-spisok-fajlov-v-papke-s/#respond</comments>
+		<pubDate>Mon, 06 Mar 2017 14:36:14 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[ZennoSnippets]]></category>
+		<category><![CDATA[Csharp]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Получаем список файлов]]></category>
+
+		<guid isPermaLink="false">/?p=69</guid>
+		<description><![CDATA[<p>Основная задача: Получаем список файлов в папке. Zennoposter Как реализовать в zennoposter это кубиками , да просто! Так же мы можем использовать фильтр по маске и искать в поддиректориях. Но не всегда это удобно&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/poluchaem-spisok-fajlov-v-papke-s/">Получаем список файлов в папке. С#</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/poluchaem-spisok-fajlov-v-papke-s/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

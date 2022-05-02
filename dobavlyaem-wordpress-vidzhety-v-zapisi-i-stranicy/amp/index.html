@@ -1,0 +1,506 @@
+<!doctype html>
+<html amp lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Привет читателям. Тема для — виджеты. Вернее, плагины которые помогут вам применять ваши виджеты не только в стандартных сайдбарах, а гораздо шире." />
+<meta name="twitter:title" content="Добавляем WordPress виджеты в записи и страницы | Artstroy - Искусное веб строительство!" />
+<meta name="twitter:image" content="https://artstroy.net/wp-content/uploads/Widgets-620x330.jpg" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Добавляем WordPress виджеты в записи и страницы | Artstroy - Искусное веб строительство!" />
+<meta property="og:description" content="Привет читателям. Тема для — виджеты. Вернее, плагины которые помогут вам применять ваши виджеты не только в стандартных сайдбарах, а гораздо шире." />
+<meta property="og:url" content="https://artstroy.net/dobavlyaem-wordpress-vidzhety-v-zapisi-i-stranicy/" />
+<meta property="og:site_name" content="Artstroy - Искусное веб строительство!" />
+<meta property="article:tag" content="Виджеты" />
+<meta property="article:tag" content="Плагины" />
+<meta property="article:section" content="Кастомизация" />
+<meta property="article:published_time" content="2017-03-31T08:28:18+00:00" />
+<meta property="article:modified_time" content="2017-03-31T09:23:44+00:00" />
+<meta property="og:updated_time" content="2017-03-31T09:23:44+00:00" />
+<meta property="og:image" content="https://artstroy.net/wp-content/uploads/Widgets-620x330.jpg" />
+<meta property="og:image:secure_url" content="https://artstroy.net/wp-content/uploads/Widgets-620x330.jpg" />
+<meta property="og:image:width" content="620" />
+<meta property="og:image:height" content="330" />
+<meta property="og:image:alt" content="Добавляем WordPress виджеты в записи и страницы" />
+	<title>Добавляем WordPress виджеты в записи и страницы | Artstroy - Искусное веб строительство!</title>
+		<link rel="canonical" href="/dobavlyaem-wordpress-vidzhety-v-zapisi-i-stranicy/" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"Artstroy - \u0418\u0441\u043a\u0443\u0441\u043d\u043e\u0435 \u0432\u0435\u0431 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e!"},"@type":"Article","mainEntityOfPage":"https:\/\/artstroy.net\/dobavlyaem-wordpress-vidzhety-v-zapisi-i-stranicy\/","headline":"\u0414\u043e\u0431\u0430\u0432\u043b\u044f\u0435\u043c WordPress \u0432\u0438\u0434\u0436\u0435\u0442\u044b \u0432 \u0437\u0430\u043f\u0438\u0441\u0438 \u0438 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b","datePublished":"2017-03-31T08:28:18+00:00","dateModified":"2017-03-31T09:23:44+00:00","author":{"@type":"Person","name":"ArtStroy"},"image":{"@type":"ImageObject","url":"https:\/\/artstroy.net\/wp-content\/uploads\/Widgets-620x330.jpg","width":620,"height":330},"description":"\u041f\u0440\u0438\u0432\u0435\u0442 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f\u043c. \u0422\u0435\u043c\u0430 \u0434\u043b\u044f \u2014 \u0432\u0438\u0434\u0436\u0435\u0442\u044b. \u0412\u0435\u0440\u043d\u0435\u0435, \u043f\u043b\u0430\u0433\u0438\u043d\u044b \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043f\u043e\u043c\u043e\u0433\u0443\u0442 \u0432\u0430\u043c \u043f\u0440\u0438\u043c\u0435\u043d\u044f\u0442\u044c \u0432\u0430\u0448\u0438 \u0432\u0438\u0434\u0436\u0435\u0442\u044b \u043d\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0445 \u0441\u0430\u0439\u0434\u0431\u0430\u0440\u0430\u0445, \u0430 \u0433\u043e\u0440\u0430\u0437\u0434\u043e \u0448\u0438\u0440\u0435."}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 600px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		td, th {
+text-align: left;
+}
+
+a, a:active, a:visited {
+text-decoration: underline;
+}
+	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="/">
+									<span class="amp-site-title">
+				Artstroy &#8212; Искусное веб строительство!			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Добавляем WordPress виджеты в записи и страницы</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/ad9373be8f728ddda30d1b039f115ccf?s=24&#038;d=mm&#038;r=g" alt="ArtStroy" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">ArtStroy</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-03-31T10:28:18+00:00">
+		5 лет ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p><amp-img class="alignnone size-full wp-image-2970 amp-wp-enforced-sizes" src="/wp-content/uploads/Widgets-620x330.jpg" width="620" height="330" alt="Добавляем WordPress виджеты в записи и страницы" layout="intrinsic"></amp-img></p>
+<p>Привет читателям. Тема для — виджеты. Вернее, плагины которые помогут вам применять ваши виджеты не только в стандартных сайдбарах, а гораздо шире. Предположим вы находитесь в процессе создания персонального портфолио для рекламы своих писательских услуг. На базе WordPress, конечно же. Подумаем над тем, как можно просто и эффективно добавлять разные виды контента с других ресурсов на страницы портфолио. Один из самых эффективных способов придать страницам более интересный вид, а заодно показать разные виды контента, заключается во вставке виджетов, которые обычно находятся в сайдбаре, внутрь постов и страниц.</p>
+<p><span id="more-12862"></span>С помощью этого приема, вы сможете использовать WordPress виджеты для отображения блока последних записей внутри поста или страницы, или показать виджет «календарь» прямо в записи. Как бы то ни было, взглянув на список <a title="Как создать виджет с табами для WordPress?" href="/kak-sozdat-vidzhet-s-tabami-dlya-wordpress/">виджетов</a>, которые создаются множеством плагинов, вы поймете, как можно использовать прием «виджет внутри поста или страницы» самым подходящим именно для вас способом.</p>
+<h3>Как использовать прием «виджет внутри поста»?</h3>
+<p>Например, можно разнообразить страницу «Обо мне» использовав там виджет, создаваемый плагином <a href="http://wordpress.org/plugins/instagram-for-wordpress/" target="_blank" rel="nofollow">Instagram for WordPress</a> для показа фида изображений из моего Instagram аккаунта. Этот плагин позволяет использовать его полную функциональность посредством вставки шорткода, но, стоит помнить, что не все плагины обладают этой функцией.</p>
+<p>Вы так же можете воспользоваться виджетом какого либо плагина для социализации сайта, например, использовать виджет для отображения списка друзей с Facebook или последних действий в Facebook аккаунте. То же самое можно проделать и с плагинами для Twitter и других социальных сетей.</p>
+<p>Кроме того, можно использовать виджет «ссылки» для показа блока ссылок на одной или множестве страниц. Это могут быть ссылки на другие сайты, для которых вы писали статьи. Вы можете использовать эти статьи в своем портфолио, показав ссылки на них на множестве страниц. Если бы вы добавляли такой блок ссылок в свои записи вручную, то когда бы понадобилось внести какие-то изменения, вам бы пришлось изменять ссылки отдельно в каждом посте. Но, используя виджет «ссылки», вы можете просто отредактировать ссылки, собранные в этом в виджете, и сделанные изменения отобразятся везде, где он вставлен.</p>
+<p>Плагины, добавляющие свои виджеты, дают множество элементов, которые вы теперь можете брать в расчет и добавлять в свои посты и страницы.</p>
+<p><strong>Как добавлять виджеты в записи и страницы?</strong></p>
+<p>Итак, когда мы знаем, зачем нам это нужно, давайте посмотрим, как можно реализовать показ виджетов внутри постов страниц. В большинстве случаев, когда дело касается WordPress, самый простой способ воплотить в жизнь какую-либо идею — это использовать плагин, а когда дело доходит до вставки виджетов в посты и страницы, то для реализации этой задумки существует несколько хороших вариантов.</p>
+<h2><a href="http://wordpress.org/plugins/amr-shortcode-any-widget/" target="_blank" rel="nofollow">Amr shortcode any widget</a></h2>
+<p>Бесплатный плагин, позволяющий легко создавать <a title="Styles with Shortcodes — премиумный «поставщик» шорткодов" href="/styles-with-shortcodes-premiumnyj-postavshhik-shortkodov/">шорткоды</a>, которые можно использовать для вставки и показа виджета в посте или на странице. Больше этот плагин ничего такого не делает, но, зато, он прост в использовании.</p>
+<p>Единственный его недостаток заключается в том, что вам придется держать в памяти шорткоды для всех виджетов, которые вы хотите использовать (или постоянно возвращаться на страницу виджета, чтоб вспомнить нужный код). На странице плагина указано, что он совместим с версией 3.4.2, но у меня не возникало каких-либо проблем при установке на версию 3.5.2.</p>
+<h2><a href="http://wordpress.org/plugins/widgetize-pages-light/" target="_blank" rel="nofollow">Widgetize Pages Light</a></h2>
+<p>Эта облегченная версия премиум плагина доступна на WordPress.org. Чтоб использовать этот плагин, вам нужно будет создать дополнительный сайдбар, а затем добавить туда виджеты, которые вы хотите показывать – ничего сложного делать не нужно, и можно сразу использовать плагин.</p>
+<p>На странице настройки плагина, есть область, где можно создать строки и колонки для макета ваших записей. Затем, используя выпадающее меню, вы можете выбирать ранее созданные сайдбары, которые будут отображаться в макетированной части страницы.</p>
+<p><amp-img class="alignnone size-full wp-image-2971 amp-wp-enforced-sizes" src="/wp-content/uploads/Widgetize-Pages-Light.jpg" width="603" height="236" alt="Widgetize Pages Light" layout="intrinsic"></amp-img></p>
+<p>Этот плагин не только упрощает процесс добавления виджетов в посты и страницы, но и позволяет делать ваши записи многоколоночными, а это значит, что вы можете сделать ваши страницы такими, какими вы бы хотели их видеть.</p>
+<h2><a href="http://codecanyon.net/item/sidebar-widget-manager-for-wordpress/2287447/?ref=dalecom" target="_blank" rel="nofollow">Sidebar &amp; Widget Manager for WordPress</a></h2>
+<p>Это премиум версия плагина, описанного выше, которая позволяет добавлять сайдбары и виджеты в посты и страницы. Как и бесплатная версия, этот плагин дает вам возможность создавать уникальные страницы с возможностью индивидуальной перестройки шаблонов.</p>
+<p><amp-img class="alignnone size-full wp-image-2972 amp-wp-enforced-sizes" src="/wp-content/uploads/Sidebar-Widget-Manager-for-WordPress.jpg" width="590" height="300" alt="Sidebar &amp; Widget Manager for WordPress" layout="intrinsic"></amp-img></p>
+<p>Наряду со всеми фишками, которые есть в бесплатной версии, в этом менеджере сайдбаров присутствуют и новые опции, например, возможность, отображать разные сайдбары, в зависимости от того, какие записи и страницы просматривает пользователь. Это очень полезная фишка, благодаря которой обновление до премиум версии может стать актуальной потребностью для многих типов сайтов.</p>
+<h2><a href="http://wordpress.org/plugins/widgets-on-pages/" target="_blank" rel="nofollow">Widgets on Pages</a></h2>
+<p>Еще один бесплатный и очень востребованный плагин для добавления виджетов в посты и страницы. Widgets on Pages позволяет вам использовать свежесозданную дефолтную область для виджетов для создания собственного списка виджетов, или, в качестве альтернативы, вы можете создать неограниченное количество дополнительных областей для виджетов.</p>
+<p><amp-img class="alignnone size-full wp-image-2973 amp-wp-enforced-sizes" src="/wp-content/uploads/Widgets-on-Pages.png" width="600" height="195" alt="Widgets on Pages" layout="intrinsic"></amp-img></p>
+<p>Теперь, воспользовавшись шорткодами, названными в соответствии с определенными областям виджетов, вы можете вставлять ваши виджеты в посты и страницы. Вы так же можете вызывать уже существующие сайдбары, указывая в <a title="Shortcodes Ultimate — шорткоды для вашего блога" href="/shortcodes-ultimate-shortkody-dlya-vashego-bloga/">шорткодах</a> названия этих сайдбараов, которые, как правило, ‘sidebar-1’ и т.д.</p>
+<p>Я еще не успел упомянуть в этой статье, что плагин Widgetize Pages Light еще является и хорошим инструментом для построения шаблонов страниц, но, не смотря на это, он все еще остается хорошей альтернативой для тех, кто не нуждается в функционале подобного рода или использует другие инструменты для конструирования страниц.</p>
+<h3>Другие способы усовершенствования WORDPRESS виджетов</h3>
+<p><a href="http://wordpress.org/plugins/flexible-posts-widget/" target="_blank" rel="nofollow"><strong>Flexible Posts Widget</strong></a> — позволяет вам показывать блок «последние записи», как виджет сайдбаре или на странице/посте, если использовать его в комбинации с одним из описанным выше плагинов. Если стандартный виджет «последние записи» показывают только самые свежие записи, то этот плагин дает вам гораздо больше контроля над этим блоком. С помощью данного инструмента, вы можете показывать посты определенного типа, соответствующие определенным категориям или тегам. Вы так же сможете полностью контролировать порядок, в котором показываются записи.</p>
+<p><a href="http://wordpress.org/plugins/widget-logic/" target="_blank" rel="nofollow"><strong>Widget Logic</strong></a> – это бесплатный плагин который я уже <a title="Widget Logic — логичное расположение контента" href="/widget-logic-logichnoe-raspolozhenie-kontenta/">описывал</a> ранее, позволяющий вам выбирать, какие виджеты показывать в определенных постах/страницах. Этот плагин добавляет новое поле к каждому виджету. С помощью этого поля вы можете контролировать страницы, посты и категории, где появляется тот или иной виджет. Этому плагину есть множество применений, например, можно показать виджет, включающий личные фото с Flickr только на странице «Обо мне», или отображать определенный ссылки только на страницах или в категориях, которые имеют к ним непосредственное отношение.</p>
+<p>Плагин <a href="http://wordpress.org/plugins/display-widgets/" target="_blank" rel="nofollow"><strong>Display Widgets</strong></a> выполняет практически ту же работу, что и Widget Logic, но он более прост в использовании, благодаря наличию чекбоксов для страниц, на которых вы хотите показать тот или иной виджет.</p>
+<p><a href="http://wordpress.org/plugins/dynamic-widgets/" target="_blank" rel="nofollow"><strong>Dynamic Widgets</strong></a> – еще один бесплатный виджет, позволяющий вам контролировать, где и какой виджет показывать. Этот плагин может порадовать довольно впечатляющими фишками, к примеру, функцией показа определенного виджета на определенной странице только в определенные дни недели.</p>
+<p><a href="http://wordpress.org/plugins/widgets-reloaded/" target="_blank" rel="nofollow"><strong>Widgets Reloaded</strong></a> — плагин, который уже некоторое время не обновлялся, но на момент написания этой статьи все еще работал с WP 3.5.2, что очень хорошо, так как этот бесплатный плагин добавляет очень много функциональности виджетам WordPress. Установив этот виджет, который позволит вам преобразить ваши виджеты, с помощью дополнительных полей, дающих вам тотальный контроль над их использованием. Теперь виджеты можно применять множество раз, что ранее было невозможно.</p>
+<p>Widgets Reloaded. Вот как выглядит виджет «категории» после установки Widgets Reloaded. Как видите, вы можете контролировать работу виджета.</p>
+<p><amp-img class="alignnone size-full wp-image-2974 amp-wp-enforced-sizes" src="/wp-content/uploads/Widgets-Reloaded.jpg" width="592" height="554" alt="Widgets Reloaded" layout="intrinsic"></amp-img></p>
+<p>Плагин <a href="http://wordpress.org/plugins/colorful-text-widget/" target="_blank" rel="nofollow"><strong>Colorful Text Widget</strong></a> позволяет вам раскрасить текстовые виджеты – изменить цвет текста, заголовков и фонов ваших виджетов.</p>
+<p>Использовав один из таких плагинов для вставки виджетов в страницу или пост, вы сможете в дальнейшем добавлять текстовые виджеты, подгоняя их под цветовую схему вашей темы.</p>
+<p><amp-img class="alignnone size-full wp-image-2975 amp-wp-enforced-sizes" src="/wp-content/uploads/Colorful-Text-Widget.jpg" width="603" height="375" alt="Colorful Text Widget" layout="intrinsic"></amp-img></p>
+<h3>В заключение</h3>
+<p>Виджеты – это ключевая часть WordPress. Они поставляются со множеством плагинов для легкого использования последних в сайдбаре. Применив один из плагинов для показа виджетов в постах и страницах, вы сможете добавлять динамичный контент, с внешних сайтов на ваш блог.</p>
+<p>Используя стандартные WordPress виджеты, вы сэкономите себе кучу времени, ведь вам больше не нужно будет добавлять контент в каждый пост по отдельности, так как все это можно обновить, изменив данные только в одном месте, к примеру, с помощью проектировщика меню или, когда вы добавляете ссылки на страницы, используя виджет «ссылки».</p>
+<p><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-color="red" data-pin-height="128"><amp-img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" width="56" height="28" class="amp-wp-enforced-sizes" layout="intrinsic"></amp-img></a></p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/wordpress/kastomizaciya/" rel="category tag">Кастомизация</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/vidzhety/" rel="tag">Виджеты</a>, <a href="/tag/plaginy/" rel="tag">Плагины</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/dobavlyaem-wordpress-vidzhety-v-zapisi-i-stranicy/#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Artstroy &#8212; Искусное веб строительство!</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+</html>

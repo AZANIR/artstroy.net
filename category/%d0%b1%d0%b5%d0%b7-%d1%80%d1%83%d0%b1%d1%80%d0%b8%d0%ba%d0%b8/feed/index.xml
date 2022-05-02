@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Без рубрики &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/%D0%B1%D0%B5%D0%B7-%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Управление версиями Node.js с помощью nvm в Windows</title>
+		<link>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/</link>
+		<comments>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/#respond</comments>
+		<pubDate>Sun, 20 Dec 2020 13:43:23 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[nvm]]></category>
+
+		<guid isPermaLink="false">/?p=4739</guid>
+		<description><![CDATA[<p>Вопрос экономии времени и удобства окружения разработчика — штука сложная. Работая с Node.js, иногда приходится тестировать своё приложение не только в той версии, которую используете вы, но и в тех, что были выпущены до&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/">Управление версиями Node.js с помощью nvm в Windows</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Ошибки шаблона, с моментальным оповещением в telegram &#8212; 2 [plugin].</title>
+		<link>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram-2-plugin/</link>
+		<comments>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram-2-plugin/#respond</comments>
+		<pubDate>Thu, 16 Jan 2020 13:19:57 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Плагины]]></category>
+		<category><![CDATA[сниппет]]></category>
+
+		<guid isPermaLink="false">/?p=4629</guid>
+		<description><![CDATA[<p>Надеюсь вы читали мою предыдущую стать на тему оповещения! В ней мы расписывали как все сделать в кубике спиппете, но время не стоит на месте и разработчики тоже не спят с выходом версии 5.20&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram-2-plugin/">Ошибки шаблона, с моментальным оповещением в telegram &#8212; 2 [plugin].</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/oshibki-shablona-s-momentalnym-opoveshheniem-v-telegram-2-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GRAND FlAGallery &#8212; добавляем флэш галереи на свой сайт</title>
+		<link>/grand-flagallery-dobavlyaem-flesh-galerei-na-sajt/</link>
+		<comments>/grand-flagallery-dobavlyaem-flesh-galerei-na-sajt/#respond</comments>
+		<pubDate>Sun, 06 Jan 2019 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Медиа]]></category>
+		<category><![CDATA[Галереи]]></category>
+		<category><![CDATA[Плагины]]></category>
+		<category><![CDATA[Популярные плагины]]></category>
+		<category><![CDATA[Слайдеры]]></category>
+
+		<guid isPermaLink="false">/grand-flagallery-dobavlyaem-flesh-galerei-na-sajt/</guid>
+		<description><![CDATA[<p>Что больше всего радует глаз посетителя заглянувшего впервые, на какой ни будь сайт? Правильно,  красивые изображения. И чем лучше они организованы, тем приятнее смотреть. Сегодня рассказ об одном, таком организаторе – плагине GRAND FlAGallery.&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/grand-flagallery-dobavlyaem-flesh-galerei-na-sajt/">GRAND FlAGallery &#8212; добавляем флэш галереи на свой сайт</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/grand-flagallery-dobavlyaem-flesh-galerei-na-sajt/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WpTheme Generator &#8212; генератор премиум тем</title>
+		<link>/wptheme-generator-generiruem-premium-temy/</link>
+		<comments>/wptheme-generator-generiruem-premium-temy/#respond</comments>
+		<pubDate>Sat, 05 Jan 2019 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Темы премиум]]></category>
+		<category><![CDATA[генераторы]]></category>
+		<category><![CDATA[Премиум темы]]></category>
+
+		<guid isPermaLink="false">/wptheme-generator-generiruem-premium-temy/</guid>
+		<description><![CDATA[<p>&#160; WpTheme Generator – новый онлайн сервис, позволяющий создавать премиум темы для WordPress. Да, да, я не ошибся. Именно — генератор премиум тем. И прямо в онлайне. С помощью этого генератора — конструктора, можно&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/wptheme-generator-generiruem-premium-temy/">WpTheme Generator &#8212; генератор премиум тем</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/wptheme-generator-generiruem-premium-temy/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>VintageJS &#8212; плагин &#171;старения&#187; для ваших фото</title>
+		<link>/vintagejs-delaem-retro-kartinki-v-bloge/</link>
+		<comments>/vintagejs-delaem-retro-kartinki-v-bloge/#respond</comments>
+		<pubDate>Sat, 05 Jan 2019 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Медиа]]></category>
+		<category><![CDATA[VintageJS]]></category>
+		<category><![CDATA[Картинки]]></category>
+		<category><![CDATA[Плагины]]></category>
+
+		<guid isPermaLink="false">/vintagejs-delaem-retro-kartinki-v-bloge/</guid>
+		<description><![CDATA[<p>&#160; Небольшой и оригинальный плагин VintageJS позволяющий быстро применить к любой выводимой картинке эффект ретро. Установка плагина стандартная. После установки в панели администрирования появляется пункт – Внешний вид — VintageJS. Собственно изменить там ничего&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/vintagejs-delaem-retro-kartinki-v-bloge/">VintageJS &#8212; плагин &#171;старения&#187; для ваших фото</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/vintagejs-delaem-retro-kartinki-v-bloge/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Программа для создания коллажей &#8212; ФотоКОЛЛАЖ</title>
+		<link>/programma-dlya-sozdaniya-kollazhej-v-pomoshh-bloggeru/</link>
+		<comments>/programma-dlya-sozdaniya-kollazhej-v-pomoshh-bloggeru/#respond</comments>
+		<pubDate>Wed, 02 Jan 2019 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Прочие]]></category>
+		<category><![CDATA[ФотоКОЛЛАЖ]]></category>
+
+		<guid isPermaLink="false">/programma-dlya-sozdaniya-kollazhej-v-pomoshh-bloggeru/</guid>
+		<description><![CDATA[<p>&#160; Предмет сегодняшней статьи вроде и не имеет прямого отношения к wordpress, но может стать вам очень хорошим помощником при оформлении постов. Разговор пойдет о программе для создания коллажей — ФотоКОЛЛАЖ. Как известно, большинство&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/programma-dlya-sozdaniya-kollazhej-v-pomoshh-bloggeru/">Программа для создания коллажей &#8212; ФотоКОЛЛАЖ</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/programma-dlya-sozdaniya-kollazhej-v-pomoshh-bloggeru/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sliding Widgets &#8212; выводим любые виджеты</title>
+		<link>/sliding-widgets-vyvodim-vidzhety/</link>
+		<comments>/sliding-widgets-vyvodim-vidzhety/#respond</comments>
+		<pubDate>Fri, 22 Jun 2018 07:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Кастомизация]]></category>
+		<category><![CDATA[Виджеты]]></category>
+		<category><![CDATA[Плагины]]></category>
+
+		<guid isPermaLink="false">/sliding-widgets-vyvodim-vidzhety/</guid>
+		<description><![CDATA[<p>Сегодня у нас «в гостях» небольшой, но достаточно полезный wordpress плагин — Sliding Widgets. Плагин умеет выводить любой виджет в удобном для вас месте экрана. Например, если вы решили вывести вход и регистрацию на&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/sliding-widgets-vyvodim-vidzhety/">Sliding Widgets &#8212; выводим любые виджеты</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/sliding-widgets-vyvodim-vidzhety/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Оптимизация изображений — полное руководство</title>
+		<link>/optimizaciya-izobrazhenij-polnoe-rukovodstvo/</link>
+		<comments>/optimizaciya-izobrazhenij-polnoe-rukovodstvo/#respond</comments>
+		<pubDate>Sun, 11 Mar 2018 05:49:55 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[изображения]]></category>
+		<category><![CDATA[Оптимизация]]></category>
+
+		<guid isPermaLink="false">/?p=4263</guid>
+		<description><![CDATA[<p>Оптимизация изображений – это один из самых простых, но наиболее эффективных шагов на пути по превращению вашего сайта из просто хорошего в великолепный. Если вы провалите данную миссию, то рискуете отпугнуть пользователей, потерять возможную&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/optimizaciya-izobrazhenij-polnoe-rukovodstvo/">Оптимизация изображений — полное руководство</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/optimizaciya-izobrazhenij-polnoe-rukovodstvo/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Yoast Comment Hacks — улучшаем комментирование</title>
+		<link>/yoast-comment-hacks-uluchshaem-kommentirovanie/</link>
+		<comments>/yoast-comment-hacks-uluchshaem-kommentirovanie/#respond</comments>
+		<pubDate>Tue, 27 Feb 2018 13:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Кастомизация]]></category>
+		<category><![CDATA[Плагины]]></category>
+
+		<guid isPermaLink="false">/yoast-comment-hacks-uluchshaem-kommentirovanie/</guid>
+		<description><![CDATA[<p>Новый плагин Yoast Comment Hacks от неутомимого Joost de Valk я уже в общих чертах описывал в последнем обзоре бесплатных плагинов. Сегодня хочу остановиться на нем чуть поподробнее, потому как плагин оказался достаточно полезный,&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/yoast-comment-hacks-uluchshaem-kommentirovanie/">Yoast Comment Hacks — улучшаем комментирование</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/yoast-comment-hacks-uluchshaem-kommentirovanie/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>O favicon замолвим еще раз словечко&#8230;</title>
+		<link>/o-favicon-zamolvim-eshhe-raz-slovechko/</link>
+		<comments>/o-favicon-zamolvim-eshhe-raz-slovechko/#respond</comments>
+		<pubDate>Tue, 12 Dec 2017 07:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Кастомизация]]></category>
+		<category><![CDATA[Прочие]]></category>
+		<category><![CDATA[favicon]]></category>
+		<category><![CDATA[Дизайн]]></category>
+		<category><![CDATA[Иконки]]></category>
+		<category><![CDATA[Плагины]]></category>
+
+		<guid isPermaLink="false">/o-favicon-zamolvim-eshhe-raz-slovechko/</guid>
+		<description><![CDATA[<p>Как вставить favicon на свой сайт? Вопрос на который уже тысячу раз отвечали и который упорно задают снова и снова. Маленький логотипчик вашего сайта в браузерной строке, в закладках и на страницах выдачи поисковых&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/o-favicon-zamolvim-eshhe-raz-slovechko/">O favicon замолвим еще раз словечко&#8230;</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/o-favicon-zamolvim-eshhe-raz-slovechko/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

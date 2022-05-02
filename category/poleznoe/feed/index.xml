@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Полезное &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/poleznoe/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>Управление версиями Node.js с помощью nvm в Windows</title>
+		<link>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/</link>
+		<comments>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/#respond</comments>
+		<pubDate>Sun, 20 Dec 2020 13:43:23 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[nvm]]></category>
+
+		<guid isPermaLink="false">/?p=4739</guid>
+		<description><![CDATA[<p>Вопрос экономии времени и удобства окружения разработчика — штука сложная. Работая с Node.js, иногда приходится тестировать своё приложение не только в той версии, которую используете вы, но и в тех, что были выпущены до&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/">Управление версиями Node.js с помощью nvm в Windows</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/upravlenie-versiyami-node-js-s-pomoshhyu-nvm-v-windows/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Что такое CSS селекторы</title>
+		<link>/chto-takoe-css-selektory/</link>
+		<comments>/chto-takoe-css-selektory/#respond</comments>
+		<pubDate>Mon, 30 Nov 2020 10:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[selectors]]></category>
+		<category><![CDATA[селекторы]]></category>
+
+		<guid isPermaLink="false">/?p=4732</guid>
+		<description><![CDATA[<p>CSS3-селекторы – фундаментально полезная вещь. Даже если вы почему-то (старый IE?) не пользуетесь ими в CSS, есть много фреймворков для их кросс-браузерного использования CSS3 из JavaScript. Поэтому эти селекторы необходимо знать. Основные виды селекторов&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/chto-takoe-css-selektory/">Что такое CSS селекторы</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/chto-takoe-css-selektory/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>11 главных трендов веб-разработки в 2020–2021</title>
+		<link>/11-glavnyx-trendov-veb-razrabotki-v-2020-2021/</link>
+		<comments>/11-glavnyx-trendov-veb-razrabotki-v-2020-2021/#respond</comments>
+		<pubDate>Wed, 23 Sep 2020 08:07:01 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[разработка]]></category>
+		<category><![CDATA[тренды]]></category>
+
+		<guid isPermaLink="false">/?p=4703</guid>
+		<description><![CDATA[<p>Привет, уважаемый читатель. Сегодня ты познакомишься с трендами веб-разработки. Я поделюсь фишками, которые помогут зацепить клиента и получить высокую маржу. За последний год особую популярность приобрели как новые, так и забытые технологии (к примеру,&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/11-glavnyx-trendov-veb-razrabotki-v-2020-2021/">11 главных трендов веб-разработки в 2020–2021</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/11-glavnyx-trendov-veb-razrabotki-v-2020-2021/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Правила оформления файла README.MD на GITHUB</title>
+		<link>/pravila-oformleniya-fajla-readme-md-na-github/</link>
+		<comments>/pravila-oformleniya-fajla-readme-md-na-github/#respond</comments>
+		<pubDate>Wed, 17 Jun 2020 14:48:29 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Советы]]></category>
+		<category><![CDATA[#GitHub]]></category>
+		<category><![CDATA[#readme.md]]></category>
+		<category><![CDATA[#веб-дизайн]]></category>
+		<category><![CDATA[#вёрстка]]></category>
+
+		<guid isPermaLink="false">/?p=4652</guid>
+		<description><![CDATA[<p>Если вы начали работу на GitHub, решили загрузить туда свой проект для совместной работы с единомышленниками, то, скорее всего, в первую очередь перед вами встанет проблема создания первого файла – файла «readme.md». Можно, конечно,&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/pravila-oformleniya-fajla-readme-md-na-github/">Правила оформления файла README.MD на GITHUB</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/pravila-oformleniya-fajla-readme-md-na-github/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>VestaCP, несколько версий php или мульти php на Debian и Ubuntu</title>
+		<link>/vestacp-neskolko-versij-php-ili-multi-php-na-debian-ubuntu/</link>
+		<comments>/vestacp-neskolko-versij-php-ili-multi-php-na-debian-ubuntu/#comments</comments>
+		<pubDate>Mon, 21 May 2018 06:23:52 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Домены и хостинг]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[PHP7]]></category>
+		<category><![CDATA[VESTA]]></category>
+		<category><![CDATA[vestaCP]]></category>
+		<category><![CDATA[ПАНЕЛЬ]]></category>
+
+		<guid isPermaLink="false">/?p=4327</guid>
+		<description><![CDATA[<p>Как работает менеджер версий php? Как взаимодействовать с php менеджером? Как проверить версию php на сервере и сайте? Привет читатель, не так давно на просторах интернета наткнулся на прекрасный скрипт облегчающий внедрение&#160;в&#160;VestaCP нескольких версий&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/vestacp-neskolko-versij-php-ili-multi-php-na-debian-ubuntu/">VestaCP, несколько версий php или мульти php на Debian и Ubuntu</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/vestacp-neskolko-versij-php-ili-multi-php-na-debian-ubuntu/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Оптимизация контента перед публикацией в блоге</title>
+		<link>/optimizaciya-kontenta-pered-publikaciej-v-bloge/</link>
+		<comments>/optimizaciya-kontenta-pered-publikaciej-v-bloge/#respond</comments>
+		<pubDate>Thu, 01 Mar 2018 14:55:18 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[Советы]]></category>
+		<category><![CDATA[Создание сайта]]></category>
+		<category><![CDATA[Оптимизация]]></category>
+
+		<guid isPermaLink="false">/?p=4169</guid>
+		<description><![CDATA[<p>Сегодня мы поговорим о наборе ключевых шагов для новичков, направленных на оптимизацию контента, которые нужно проделать перед тем, как вы нажмете кнопку «опубликовать». С первого взгляда может показаться, что это слишком, но на самом&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/optimizaciya-kontenta-pered-publikaciej-v-bloge/">Оптимизация контента перед публикацией в блоге</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/optimizaciya-kontenta-pered-publikaciej-v-bloge/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>ShareX – программа для взятия скриншотов на ПК</title>
+		<link>/sharex-programma-dlya-vzyatiya-skrinshotov-na-pk/</link>
+		<comments>/sharex-programma-dlya-vzyatiya-skrinshotov-na-pk/#respond</comments>
+		<pubDate>Fri, 16 Feb 2018 18:09:46 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[Советы]]></category>
+		<category><![CDATA[screenshot]]></category>
+		<category><![CDATA[sharex]]></category>
+		<category><![CDATA[скриншот]]></category>
+
+		<guid isPermaLink="false">/?p=4150</guid>
+		<description><![CDATA[<p>Давно пользовался программой, которая схватывает скриншоты на экране и кладет их в буфер обмена, но такую программу как ShareX увидел впервые, которая может делать с вашими скриншотами абсолютно все. Более подробно рассмотрим основные функции в&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/sharex-programma-dlya-vzyatiya-skrinshotov-na-pk/">ShareX – программа для взятия скриншотов на ПК</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/sharex-programma-dlya-vzyatiya-skrinshotov-na-pk/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Всё о proxy! Прокси то, о чем ты не знал и стеснялся спросить!</title>
+		<link>/vsyo-o-proxy/</link>
+		<comments>/vsyo-o-proxy/#comments</comments>
+		<pubDate>Mon, 12 Feb 2018 18:58:34 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Zenno-уроки]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[прокси]]></category>
+
+		<guid isPermaLink="false">/?p=4136</guid>
+		<description><![CDATA[<p>У многих, особенно на начальных этапах, возникают вопросы касательно прокси (proxy). Эта статья объяснит, что такое прокси, их особенности, особенности взаимодействия с ними в целом и в рамках ZennoPoster&#8217;а. А также как и в каких случаях лучше&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/vsyo-o-proxy/">Всё о proxy! Прокси то, о чем ты не знал и стеснялся спросить!</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/vsyo-o-proxy/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Xpath. Базовый синтаксис</title>
+		<link>/xpath-bazovyj-sintaksis/</link>
+		<comments>/xpath-bazovyj-sintaksis/#respond</comments>
+		<pubDate>Fri, 09 Feb 2018 13:52:48 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[Zennoposter]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Полезное]]></category>
+		<category><![CDATA[Xpath]]></category>
+		<category><![CDATA[Xpath синтаксис]]></category>
+
+		<guid isPermaLink="false">/?p=4132</guid>
+		<description><![CDATA[<p>Xpath &#8212; декларативный язык запросов к элементам xml или (x)html документа и xslt преобразований. Незаменимая вещь для работы с вебстраницей. Полезные источники: Полная спецификация по Xpath 1.0 на русском здесь &#8212; http://citforum.ru/internet/xpath/xpath.shtml. Xpath Online Tester &#8212; http://www.xpathtester.com/xpath/ Использование Xpath&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/xpath-bazovyj-sintaksis/">Xpath. Базовый синтаксис</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/xpath-bazovyj-sintaksis/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Link Shell Extension или как создать символьную ссылку на папку или файл в Windows</title>
+		<link>/kak-sozdat-simvolnuyu-ssylku-na-papku-ili-fajl-v-windows/</link>
+		<comments>/kak-sozdat-simvolnuyu-ssylku-na-papku-ili-fajl-v-windows/#respond</comments>
+		<pubDate>Mon, 01 Jan 2018 13:07:08 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[C#]]></category>
+		<category><![CDATA[Начинающим]]></category>
+		<category><![CDATA[Советы]]></category>
+		<category><![CDATA[Link Shell Extension]]></category>
+		<category><![CDATA[Symbolic link]]></category>
+		<category><![CDATA[симлинк]]></category>
+
+		<guid isPermaLink="false">/?p=4057</guid>
+		<description><![CDATA[<p>После переустановки системы и установки Visual Studio у меня катострофически уменьшилось место на диске С и пришлось как-то решать проблему. И так представляем Link Shell Extension создаем символьную ссылку на папку или файл в&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/kak-sozdat-simvolnuyu-ssylku-na-papku-ili-fajl-v-windows/">Link Shell Extension или как создать символьную ссылку на папку или файл в Windows</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/kak-sozdat-simvolnuyu-ssylku-na-papku-ili-fajl-v-windows/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

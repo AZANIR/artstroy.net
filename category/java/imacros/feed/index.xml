@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Уроки: JS &amp; Imacros &#8212; Artstroy &#8212; Искусное веб строительство!</title>
+	<atom:link href="/category/java/imacros/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Sep 2021 13:26:34 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+                                          	<item>
+		<title>[Урок 5] . Правильная работа со строками. Узнаем баланс биткойн-крана.</title>
+		<link>/pravilnaya-rabota-strokami/</link>
+		<comments>/pravilnaya-rabota-strokami/#comments</comments>
+		<pubDate>Mon, 15 Jan 2018 10:14:32 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Уроки: JS & Imacros]]></category>
+		<category><![CDATA[iMacros]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[js]]></category>
+		<category><![CDATA[Джава]]></category>
+
+		<guid isPermaLink="false">/?p=4072</guid>
+		<description><![CDATA[<p>В iMacros нету никаких толковых функций для нормальной работы со строками. Зато в Javascript их предостаточно, плюс у нас есть чудесная возможность использовать титаническую мощь регулярных выражений. Обработка текста, поиск необходимых значений в тексте&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/pravilnaya-rabota-strokami/">[Урок 5] . Правильная работа со строками. Узнаем баланс биткойн-крана.</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/pravilnaya-rabota-strokami/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>[Урок 4] . Объекты и массивы JS. Парсим список биткойн-кранов с faucetbox.com при помощи iMacros.</title>
+		<link>/urok-4-obekty-massivy-js-parsim-spisok-bitkojn-kranov-s-faucetbox-com-pri-pomoshhi-imacros/</link>
+		<comments>/urok-4-obekty-massivy-js-parsim-spisok-bitkojn-kranov-s-faucetbox-com-pri-pomoshhi-imacros/#respond</comments>
+		<pubDate>Fri, 08 Dec 2017 15:01:10 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Уроки: JS & Imacros]]></category>
+		<category><![CDATA[iMacros]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[js]]></category>
+
+		<guid isPermaLink="false">/?p=4025</guid>
+		<description><![CDATA[<p>Боты, которых мы будем создавать, будут не только выполнять какие-либо действия на сайтах, но и собирать, структурировать и перерабатывать информацию. Стандартных средств iMacros для подобных целей просто нету. Здесь нам поможет Javascript, который предоставляет&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/urok-4-obekty-massivy-js-parsim-spisok-bitkojn-kranov-s-faucetbox-com-pri-pomoshhi-imacros/">[Урок 4] . Объекты и массивы JS. Парсим список биткойн-кранов с faucetbox.com при помощи iMacros.</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/urok-4-obekty-massivy-js-parsim-spisok-bitkojn-kranov-s-faucetbox-com-pri-pomoshhi-imacros/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>[Урок 3] . Получение любой информации со страницы при помощи Javascript</title>
+		<link>/how-get-any-information-with-javascript-lesson-3/</link>
+		<comments>/how-get-any-information-with-javascript-lesson-3/#comments</comments>
+		<pubDate>Sat, 28 Oct 2017 08:06:31 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Уроки: JS & Imacros]]></category>
+		<category><![CDATA[iMacros]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[js]]></category>
+		<category><![CDATA[парсинг]]></category>
+
+		<guid isPermaLink="false">/?p=3957</guid>
+		<description><![CDATA[<p>Каждый уважающий себя бот должен уметь извлекать любую информацию с сайта, например ссылки, заголовки, любой текст, номера телефонов, адреса электронной почты, картинки. В этом уроке мы рассмотрим несколько методов сбора данных на странице при&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/how-get-any-information-with-javascript-lesson-3/">[Урок 3] . Получение любой информации со страницы при помощи Javascript</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/how-get-any-information-with-javascript-lesson-3/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>[Урок 2] . Принцип работы движка iMacros. Контекст выполнения скриптов.</title>
+		<link>/urok-2-princip-raboty-dvizhka-imacros-kontekst-vypolneniya-skriptov/</link>
+		<comments>/urok-2-princip-raboty-dvizhka-imacros-kontekst-vypolneniya-skriptov/#respond</comments>
+		<pubDate>Wed, 18 Oct 2017 11:45:24 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Уроки: JS & Imacros]]></category>
+		<category><![CDATA[iMacros]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[скрипты]]></category>
+
+		<guid isPermaLink="false">/?p=3948</guid>
+		<description><![CDATA[<p>Сегодня мы поговорим об очень важной вещи — о том как устроен iMacros и по какой логике он работает. Это фундамент, понимание принципов которого поможет вам избежать многих ошибок и писать код осознанно. Я расскажу&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/urok-2-princip-raboty-dvizhka-imacros-kontekst-vypolneniya-skriptov/">[Урок 2] . Принцип работы движка iMacros. Контекст выполнения скриптов.</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/urok-2-princip-raboty-dvizhka-imacros-kontekst-vypolneniya-skriptov/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>[Урок 1] . Возможности iMacros. Что мы будем использовать из iMacros, а что эффективнее делать на Javascript?</title>
+		<link>/vozmozhnosti-imacros/</link>
+		<comments>/vozmozhnosti-imacros/#respond</comments>
+		<pubDate>Mon, 16 Oct 2017 10:31:07 +0000</pubDate>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+				<category><![CDATA[Уроки: JS & Imacros]]></category>
+		<category><![CDATA[iMacros]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[скрипты]]></category>
+
+		<guid isPermaLink="false">/?p=3935</guid>
+		<description><![CDATA[<p>iMacros — это расширение для браузера, которое позволяет записывать и воспроизводить действия пользователя в браузере. Также можно самому писать на нем скрипты и что по-настоящему круто, можно полноценно использовать Javascript помимо основного скудного синтаксиса&#46;&#46;&#46;</p>
+<p>The post <a rel="nofollow" href="/vozmozhnosti-imacros/">[Урок 1] . Возможности iMacros. Что мы будем использовать из iMacros, а что эффективнее делать на Javascript?</a> appeared first on <a rel="nofollow" href="/">Artstroy - Искусное веб строительство!</a>.</p>
+]]></description>
+		<wfw:commentRss>/vozmozhnosti-imacros/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	                                          </channel>
+</rss>

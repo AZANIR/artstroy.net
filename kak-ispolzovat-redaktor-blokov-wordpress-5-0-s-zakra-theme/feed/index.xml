@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Комментарии: Как использовать редактор блоков WordPress 5.0 с Zakra Theme?</title>
+	<atom:link href="/kak-ispolzovat-redaktor-blokov-wordpress-5-0-s-zakra-theme/feed/" rel="self" type="application/rss+xml" />
+	<link>/kak-ispolzovat-redaktor-blokov-wordpress-5-0-s-zakra-theme/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Dec 2020 17:15:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+	<item>
+		<title>Автор: irmaseo.ru</title>
+		<link>/kak-ispolzovat-redaktor-blokov-wordpress-5-0-s-zakra-theme/#comment-19270</link>
+		<dc:creator><![CDATA[irmaseo.ru]]></dc:creator>
+		<pubDate>Fri, 09 Oct 2020 18:31:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=4533#comment-19270</guid>
+		<description><![CDATA[Очень полезная информация, спасибо]]></description>
+		<content:encoded><![CDATA[<p>Очень полезная информация, спасибо</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Автор: ArtStroy</title>
+		<link>/kak-ispolzovat-redaktor-blokov-wordpress-5-0-s-zakra-theme/#comment-10642</link>
+		<dc:creator><![CDATA[ArtStroy]]></dc:creator>
+		<pubDate>Fri, 03 May 2019 09:35:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=4533#comment-10642</guid>
+		<description><![CDATA[По какому вопросу интересуетесь ?]]></description>
+		<content:encoded><![CDATA[<p>По какому вопросу интересуетесь ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Автор: Сергей</title>
+		<link>/kak-ispolzovat-redaktor-blokov-wordpress-5-0-s-zakra-theme/#comment-10586</link>
+		<dc:creator><![CDATA[Сергей]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2019 16:51:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=4533#comment-10586</guid>
+		<description><![CDATA[Здравствуйте, дайте, пожалуйста, ваш контакт]]></description>
+		<content:encoded><![CDATA[<p>Здравствуйте, дайте, пожалуйста, ваш контакт</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
